@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+  <meta charset="utf-8">
+  <title>lab</title>
+  <style>
+
+   body {
+    color: #0f0; /* Цвет текста */    
+   }
+
+   img{
+      width:500px;height:600px;        
+   }
+  </style>    
+	  
+ </head>
+ 
+
+<body>
+
+<h1 align="center">Hello Teacher</h1>
+<h2 align="center">Created by Arhivater</h2>
+<h3 align="center">Прилепко Дмитрий, группа 703б2</h3>
+<p>  	
+       <p>
+	<div>
+	<img src="lime.png">
+	<br>
+	<img src="lime.png"> 
+	</div>	
+	</p>
+ 	</p>
+  
+</body>
+</html>
