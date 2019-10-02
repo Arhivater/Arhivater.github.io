@@ -75,6 +75,8 @@ th,td {
     font-size: 200px;
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
  a.rollover {
     background: url(sasmislom.jpg) no-repeat; /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
@@ -91,38 +93,53 @@ th,td {
     height: 1000px; /*  Высота рисунка */
    }
 
-img.smisol{
+div.rotate1 {
+
+background: url (isasmislom.jpg); /* Путь к файлу с исходным рисунком */
 
 width: 480px; /* Ширина рисунка */
 
 height: 360px; /* Высота рисунка */
-
-— moz-transition: all 1s ease;
-
-— webkit-transition: all 1s ease;
-
-— o-transition: all 1s ease;
-
-transition: all 1s ease;
 
 }
 
-img.smisol:hover{
+div.rotate1:hover {
 
-background: url (SmisolVosozdalSmisol.jpg) no-repeat;
+background: url (SmisolVosozdalSmisol.jpg); /* Путь к файлу с заменяемым рисунком */
 
-width: 480px; /* Ширина рисунка */
+}
 
-height: 360px; /* Высота рисунка */
 
-— moz-transform: rotate (360deg) scale (1.5);
+  .demo { 
+    position:relative; 
+    margin:0 auto; 
+    height: 400px;
+    width:400px;
+    display: block;
+}
 
-— webkit-transform: rotate (360deg) scale (1.5);
+  .demo img { 
+    left: 0; 
+    position:absolute; 
+    top: 0; 
+}
 
-— o-transform: rotate (360deg) scale (1.5);
+  .demo img.raz {opacity:0;filter:alpha(opacity=0);}
+  .demo:hover img.raz {opacity:1;filter:alpha(opacity=100);}
+  .demo:hover img.dva, .demo img.dva:hover {opacity:0;filter:alpha(opacity=0);}
+  .demo { overflow:hidden; }
 
-— ms-transform: rotate (360deg) scale (1.5);
+.demo img.dva, .demo:hover img.raz { margin: 0px; }
 
-transform: rotate (360deg) scale (1.5);
+.demo:hover img.dva {
+  margin-top:400px; 
+  margin-left:400px;
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+}
 
+.demo img.raz {
+ margin-top:-400px; margin-left:-400px;
 }
