@@ -66,7 +66,7 @@ th,td {
 
 .st2:hover {
     background-color: #0f4a88;
-    color: #d1d10a;
+    color: #77d935;
 }
 
 .st3:hover {
@@ -77,67 +77,28 @@ th,td {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
- a.rollover {
-    background: url(sasmislom.jpg) no-repeat; /* Путь к файлу с исходным рисунком  */
-    display: block; /*  Рисунок как блочный элемент */
-    align="right"
-    width: 1000px; /* Ширина рисунка */
-    height: 1000px; /*  Высота рисунка */
-   }
+img.animate1{
 
-   a.rollover:hover {
-    background: url(SmisolVosozdalSmisol.jpg) no-repeat; /* Путь к файлу с заменяемым рисунком  */
-    display: block; /*  Рисунок как блочный элемент */
-    align="right"
-    width: 1000px; /* Ширина рисунка */
-    height: 1000px; /*  Высота рисунка */
-   }
+— moz-transition: all 1s ease;
 
-div.rotate1 {
+— webkit-transition: all 1s ease;
 
-background: url (isasmislom.jpg); /* Путь к файлу с исходным рисунком */
+— o-transition: all 1s ease;
 
-width: 480px; /* Ширина рисунка */
-
-height: 360px; /* Высота рисунка */
+transition: all 1s ease;
 
 }
 
-div.rotate1:hover {
+img.animate1:hover{
 
-background: url (SmisolVosozdalSmisol.jpg); /* Путь к файлу с заменяемым рисунком */
+— moz-transform: rotate (360deg) scale (1.5);
 
-}
+— webkit-transform: rotate (360deg) scale (1.5);
 
+— o-transform: rotate (360deg) scale (1.5);
 
-  .demo { 
-    position:relative; 
-    margin:0 auto; 
-    height: 400px;
-    width:400px;
-    display: block;
-}
+— ms-transform: rotate (360deg) scale (1.5);
 
-  .demo img { 
-    left: 0; 
-    position:absolute; 
-    top: 0; 
-}
+transform: rotate (360deg) scale (1.5);
 
-.demo:hover img.dva {
-  margin-top:400px; 
-  margin-left:400px;
-  -moz-transform:rotate(90deg);
-  -webkit-transform:rotate(90deg);
-  -o-transform:rotate(90deg);
-  -ms-transform:rotate(90deg);
-  — moz-transform: rotate (360deg) scale (1.5);
-  — webkit-transform: rotate (360deg) scale (1.5);
-  — o-transform: rotate (360deg) scale (1.5);
-  — ms-transform: rotate (360deg) scale (1.5);
-  transform: rotate (360deg) scale (1.5);
-}
-
-.demo img.raz {
- margin-top:-400px; margin-left:-400px;
 }
