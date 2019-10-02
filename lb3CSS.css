@@ -76,7 +76,7 @@ th,td {
 }
 
  a.rollover {
-    background: url(sasmislom.jpg); /* Путь к файлу с исходным рисунком  */
+    background: url(sasmislom.jpg) no-repeat; /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     align="right"
     width: 120px; /* Ширина рисунка */
@@ -85,4 +85,8 @@ th,td {
 
    a.rollover:hover {
     background: url(SmisolVosozdalSmisol.jpg); /* Путь к файлу с заменяемым рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    align="right"
+    width: 120px; /* Ширина рисунка */
+    height: 120px; /*  Высота рисунка */
    }
