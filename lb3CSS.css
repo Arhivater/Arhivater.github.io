@@ -2,6 +2,22 @@
    text-align: center; /* Выравнивание по центру */ 
 }
 
+ h1 {
+    align="left"; /* Цвет текста */    
+   }
+  
+   h2 {
+    align="left";     
+   }
+  
+   h3 {
+    align="left";   
+   }
+
+   table{
+    border="5"
+   }
+
 body{
    color: #0f0; /* Цвет текста */   
    background: url(WoWbg.jpg) no-repeat;
