@@ -74,31 +74,3 @@ th,td {
     color: #d81228;
     font-size: 200px;
 }
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-img.animate1{
-
-— moz-transition: all 1s ease;
-
-— webkit-transition: all 1s ease;
-
-— o-transition: all 1s ease;
-
-transition: all 1s ease;
-
-}
-
-img.animate1:hover{
-
-— moz-transform: rotate (360deg) scale (1.5);
-
-— webkit-transform: rotate (360deg) scale (1.5);
-
-— o-transform: rotate (360deg) scale (1.5);
-
-— ms-transform: rotate (360deg) scale (1.5);
-
-transform: rotate (360deg) scale (1.5);
-
-}
