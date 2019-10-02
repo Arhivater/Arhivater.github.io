@@ -52,23 +52,24 @@ th,td {
 }
 
 .st3 {
-    background-color: #6db44a;
+    background-color: #4e4a71;
     font-family: 'Times New Roman', Times, serif;;
     font-style: italic;
     font-size: 21px;
-    text-indent: 3em
-    color: #6db44a;
+    color: #57b07d;
 }
 
 .st1:hover {
     background-color: #aac836;
+    color: #140cc9;
 }
 
 .st2:hover {
     background-color: #0f4a88;
+    color: #d1d10a;
 }
 
 .st3:hover {
     background-color: #ebf0a6;
+    color: #d81228;
 }
-
