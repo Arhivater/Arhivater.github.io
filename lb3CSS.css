@@ -3,7 +3,7 @@
 }
 
 body{
-	 color: #0f0; /* Цвет текста */   
+   color: #0f0; /* Цвет текста */   
    background: url(WoWbg.jpg) no-repeat;
    background-position: center center; 
    background-repeat: no-repeat;  
@@ -19,18 +19,40 @@ th,td {
   text-align: center;
 }
 
-.st1
-{
-    background-color: #d3f1ff;
-    font-family: Bradley Hand, cursive;
+.st1 {
+    background-color: #ced9b7;
+    font-family: monospace;
     font-style: italic;
-    font-size: 50px;
-    text-indent: 6em;
-    color: Black;
+    font-size: 21px;
+    color: #136207;
 }
 
-.st1:hover
-{
-    background-color: #8eff96;
+.st2 {
+    background-color: #e51515;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 21px;
+    color: #0f4a88;
+}
+
+.st3 {
+    background-color: #6db44a;
+    font-family: 'Times New Roman', Times, serif;;
+    font-style: italic;
+    font-size: 21px;
+    text-indent: 3em
+    color: #6db44a;
+}
+
+.st1:hover {
+    background-color: #aac836;
+}
+
+.st2:hover {
+    background-color: #0f4a88;
+}
+
+.st3:hover {
+    background-color: #ebf0a6;
 }
 
