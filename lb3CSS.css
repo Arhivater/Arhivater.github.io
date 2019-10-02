@@ -75,12 +75,14 @@ th,td {
     font-size: 200px;
 }
 
-.smisol {
-  align="right"
-  width="120"
-  height="120"
-}
+ a.rollover {
+    background: url(sasmislom.jpg); /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    align="right"
+    width: 120px; /* Ширина рисунка */
+    height: 120px; /*  Высота рисунка */
+   }
 
-.smisol:hover {
-   <img src="SmisolVosozdalSmisol.jpg">
-}
+   a.rollover:hover {
+    background: url(SmisolVosozdalSmisol.jpg); /* Путь к файлу с заменяемым рисунком  */
+   }
