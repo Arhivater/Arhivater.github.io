@@ -79,14 +79,14 @@ th,td {
     background: url(sasmislom.jpg) no-repeat; /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     align="right"
-    width: 120px; /* Ширина рисунка */
-    height: 120px; /*  Высота рисунка */
+    width: 1000px; /* Ширина рисунка */
+    height: 1000px; /*  Высота рисунка */
    }
 
    a.rollover:hover {
-    background: url(SmisolVosozdalSmisol.jpg); /* Путь к файлу с заменяемым рисунком  */
+    background: url(SmisolVosozdalSmisol.jpg) no-repeat; /* Путь к файлу с заменяемым рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     align="right"
-    width: 120px; /* Ширина рисунка */
-    height: 120px; /*  Высота рисунка */
+    width: 1000px; /* Ширина рисунка */
+    height: 1000px; /*  Высота рисунка */
    }
