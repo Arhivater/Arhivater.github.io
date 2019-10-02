@@ -124,13 +124,6 @@ background: url (SmisolVosozdalSmisol.jpg); /* Путь к файлу с зам�
     top: 0; 
 }
 
-  .demo img.raz {opacity:0;filter:alpha(opacity=0);}
-  .demo:hover img.raz {opacity:1;filter:alpha(opacity=100);}
-  .demo:hover img.dva, .demo img.dva:hover {opacity:0;filter:alpha(opacity=0);}
-  .demo { overflow:hidden; }
-
-.demo img.dva, .demo:hover img.raz { margin: 0px; }
-
 .demo:hover img.dva {
   margin-top:400px; 
   margin-left:400px;
@@ -138,6 +131,11 @@ background: url (SmisolVosozdalSmisol.jpg); /* Путь к файлу с зам�
   -webkit-transform:rotate(90deg);
   -o-transform:rotate(90deg);
   -ms-transform:rotate(90deg);
+  — moz-transform: rotate (360deg) scale (1.5);
+  — webkit-transform: rotate (360deg) scale (1.5);
+  — o-transform: rotate (360deg) scale (1.5);
+  — ms-transform: rotate (360deg) scale (1.5);
+  transform: rotate (360deg) scale (1.5);
 }
 
 .demo img.raz {
