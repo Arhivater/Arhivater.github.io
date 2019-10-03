@@ -74,3 +74,16 @@ th,td {
     color: #d81228;
     font-size: 200px;
 }
+
+.smisol {
+align="right"
+width="250" 
+height="250"
+onmouseover="this.src='SmisolVosozdalSmisol.jpg';
+onmouseout="this.src='sasmislom.jpg';
+}
+
+.back {
+width="160" 
+height="60"
+}
