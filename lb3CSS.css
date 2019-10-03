@@ -3,15 +3,15 @@
 }
 
  h1 {
-    align="left"; /* Цвет текста */    
+    align: left; /* Цвет текста */    
    }
   
    h2 {
-    align="left";     
+    align: left;     
    }
   
    h3 {
-    align="left";   
+    align: left;   
    }
 
    table{
@@ -84,6 +84,7 @@ onmouseout="this.src='sasmislom.jpg';
 }
 
 .back {
+align=right;
 width=60; 
 height=60;
 }
