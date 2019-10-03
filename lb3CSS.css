@@ -76,14 +76,14 @@ th,td {
 }
 
 .smisol {
-align="right"
-width="250" 
-height="250"
+align=right;
+width=250;
+height=250;
 onmouseover="this.src='SmisolVosozdalSmisol.jpg';
 onmouseout="this.src='sasmislom.jpg';
 }
 
 .back {
-width="160" 
-height="60"
+width=60; 
+height=60;
 }
