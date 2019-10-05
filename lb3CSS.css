@@ -76,15 +76,15 @@ th,td {
 }
 
 .smisol {
-align=right;
-width=250;
-height=250;
+text-align: right;
+width: 250px;
+height: 250px;
 onmouseover="this.src='SmisolVosozdalSmisol.jpg';
 onmouseout="this.src='sasmislom.jpg';
 }
 
 .back {
-align=right;
-width=60; 
-height=60;
+text-align: left;
+width: 60px; 
+height: 60px;
 }
