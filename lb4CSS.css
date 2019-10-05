@@ -1,1 +1,90 @@
+.fig {
+   text-align: center; /* Выравнивание по центру */ 
+}
 
+ h1 {
+    align: left; /* Цвет текста */    
+   }
+  
+   h2 {
+    align: left;     
+   }
+  
+   h3 {
+    align: left;   
+   }
+
+   table{
+    border="5"
+   }
+
+body{
+   color: #0f0; /* Цвет текста */   
+   background: url(WoWbg.jpg) no-repeat;
+   background-position: center center; 
+   background-repeat: no-repeat;  
+   background-attachment: fixed;   
+   background-size: cover;
+   background-color: #464646;
+   border-collapse: collapse;
+   object-fit: cover;
+}
+	 
+th,td {
+	width: 120px; height: 120px;
+  text-align: center;
+}
+
+.st1 {
+    background-color: #ced9b7;
+    font-family: monospace;
+    font-style: italic;
+    font-size: 21px;
+    color: #136207;
+}
+
+.st2 {
+    background-color: #e51515;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 21px;
+    color: #9fa9b3;
+}
+
+.st3 {
+    background-color: #4e4a71;
+    font-family: 'Times New Roman', Times, serif;;
+    font-style: italic;
+    font-size: 21px;
+    color: #57b07d;
+}
+
+.st1:hover {
+    background-color: #aac836;
+    color: #140cc9;
+}
+
+.st2:hover {
+    background-color: #0f4a88;
+    color: #77d935;
+}
+
+.st3:hover {
+    background-color: #ebf0a6;
+    color: #d81228;
+    font-size: 200px;
+}
+
+.smisol {
+text-align: right;
+width: 250px;
+height: 250px;
+onmouseover="this.src='SmisolVosozdalSmisol.jpg';
+onmouseout="this.src='sasmislom.jpg';
+}
+
+.back {
+text-align: left;
+width: 60px; 
+height: 60px;
+}
