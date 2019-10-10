@@ -83,6 +83,21 @@ onmouseover="this.src='SmisolVosozdalSmisol.jpg';
 onmouseout="this.src='sasmislom.jpg';
 }
 
+.gift_style {
+		background-color: LightGreen;
+		padding: 2px 2px 2px 20px;
+		border: 1px #777 solid;
+		}
+		
+		.giftBox {
+			display: none;
+		}
+		
+		.giftBox:target {
+		display: block;
+		}
+
+
 .back {
 text-align: left;
 width: 60px; 
