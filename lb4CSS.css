@@ -15,6 +15,7 @@
    }
 
    table{
+    align: center;  	   
     border="5"
    }
 
@@ -32,7 +33,7 @@ body{
 	 
 th,td {
 	width: 120px; height: 120px;
-  text-align: center;
+  	text-align: center;
 }
 
 .st1 {
@@ -102,39 +103,4 @@ onmouseout="this.src='sasmislom.jpg';
 text-align: left;
 width: 60px; 
 height: 60px;
-}
-
-.links {
-	list-style: none;
-}
-
-.links {
-	background-color: #7B68EE;
-	color: #FFD700;
-	width: 45%;
-	margin: auto;
-}
-
-.links link1box {
-	display: none;
-}
-		
-.links:target {
-	display: block;
-}
-
-.link1:link {
-	color: #00BFFF;
-}
-
-.link1:visited {
-	color: #00BFFF;
-}
-
-.linl1:hover {
-	color: #87CEFA;
-}
-
-.link1:active {
-	color: #00BFFF;
 }
