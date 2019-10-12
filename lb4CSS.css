@@ -15,8 +15,8 @@
    }
 
    table{
-    align: center;  	   
-    border="5"
+    text-align: center; 
+    border= 10;	   
    }
 
 body{
