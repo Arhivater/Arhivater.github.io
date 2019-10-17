@@ -30,7 +30,12 @@ body{
    border-collapse: collapse;
    object-fit: cover;
 }
-	 
+
+table {
+border = 10
+}
+
+
 th,td {
 	width: 120px; height: 120px;
   	text-align: center;
