@@ -108,7 +108,7 @@ height: 60px;
 
 .links li{
 	display: inline-block;
-	background-color: #00BFFF;
+	background-color: #228B22;
 	color: #000000;
 	margin: 0;
 	padding: 10px;
@@ -123,8 +123,9 @@ height: 60px;
 }
 
 .linkstyle {
+	text-align: center;
 	display: none;
-	background-color: #00BFFF;
+	background-color: #228B22F;
 	color: #000000;
 	width: 280px;
 	height: 300px;
@@ -152,7 +153,7 @@ height: 60px;
 }
 
 .links li:hover {
-	background-color: #87CEFA;
+	background-color: #228B22;
 }
 
 .link1style {
@@ -174,24 +175,24 @@ height: 60px;
 }
 
 .link2style tr:nth-child(odd) {
-	background-color: #87CEFA;
+	background-color: #228B22;
 }
 
 .link2style tr:nth-child(even) {
-	background-color: #7B68EE;
+	background-color: #228B22;
 }
 
 .link2style tr:first-child {
-	background-color: #7FFFD4;
+	background-color: #228B22;
 }
 
 .link2style tr:last-child {
-	background-color: #7FFFD4;
+	background-color: #228B22;
 }
 
 .bottonclose {
 	position: relative;
-	background-color: #F0E68C;
+	background-color: #32CD32;
 	color: #4682B4;
 	padding: 10px;
 	top: 15px;
