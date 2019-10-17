@@ -104,3 +104,25 @@ text-align: left;
 width: 60px; 
 height: 60px;
 }
+
+
+.links {
+	list-style: none;
+}
+
+.links {
+	background-color: #7B68EE;
+	color: #FFD700;
+	width: 45%;
+	margin: auto;
+}
+
+.links link1box {
+	display: none;
+}
+		
+.links:target {
+	display: block;
+}
+
+
