@@ -202,6 +202,15 @@ height: 60px;
 	top: 15px;
 }
 
+
+.bottonclose:hover {
+	position: relative;
+	background-color: #7FFF00;
+	color: #4682B4;
+	padding: 10px;
+	top: 15px;
+}
+
 .link3style {
 	position: relative;
 	text-align: left;
