@@ -106,6 +106,20 @@ height: 60px;
 }
 
 
+.linkstyle {
+	display: none;
+	background-color: #00BFFF;
+	color: #000000;
+	width: 280px;
+	height: 300px;
+	margin: auto;
+}
+
+
+.linkstyle:target {
+	display: block;
+}
+
 .links {
 	list-style: none;
 }
