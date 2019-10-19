@@ -182,19 +182,23 @@ height: 60px;
 }
 
 .link2style tr:nth-child(odd) {
-	background-color: #228B22;
+	background-color: #A36DEC;
+	font-family:  monospace;
 }
 
 .link2style tr:nth-child(even) {
-	background-color: #228B22;
+	background-color: #a22;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 .link2style tr:first-child {
-	background-color: #228B22;
+	background-color:   #B0CA5F  ;
+	font-family:  cursive;
 }
 
 .link2style tr:last-child {
-	background-color: #228B22;
+	background-color:  #d2ea4e;
+	font-family:  fantasy;
 }
 
 .bottonclose {
@@ -221,26 +225,4 @@ height: 60px;
 
 .link4style {
 	width: 100%;
-}
-
-.ZaglavStroka {
-background-color: #CD853F;
-font-family:  cursive;
-}
-
-
-
-th:first-child {
-	background-color: #CD853F;
-	font-family:  cursive;
-} 
-
-td:nth-child(odd) {
-	font-family:  sans-serif;
-	background-color:  #d2ea4e ;
-}
-
-td:nth-child(even) {
-	font-family:  serif;	
-	background-color:   #eaaf4e  ;
 }
