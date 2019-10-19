@@ -22,22 +22,27 @@ td,th{
 }
 
 .border-box{
-    box-sizing: border-box;
-   /* border-left: 10px solid #808080;
+    /*box-sizing: border-box;
+    border-left: 10px solid #808080;
     border-bottom: 20px solid #808080; */
-    width: calc(100% - 940px);
+    width: 210mm;
     height: auto;
-    margin: 50px;
-    margin-left: 420px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    margin: auto;
+    
+ 
+    
 }
 
 .main-box{
-    box-sizing: border-box;
-    margin-left: 100px;
+   /* box-sizing: border-box;
+    margin-left: 100px; */
     height: 100%;
-    width: calc(100% - 200px);
+    width: 210mm;
+    background-color:    #b9aabd  ; 
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+    padding-left:  3cm;
+    padding-right: 1.5cm;
 }
 
 .turquoise-box{
