@@ -43,21 +43,27 @@ ul, ol, li{
 }
 
 .main-box{
-    box-sizing: border-box;
-    margin-left: 100px;
+   /* box-sizing: border-box;
+    margin-left: 100px; */
     height: 100%;
-    width: calc(100% - 200px);
+    width: 210mm;
+    background-color:   #992abd ; 
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+    padding-left:  3cm;
+    padding-right: 1.5cm;
 }
 
 .turquoise-box{
     box-sizing: border-box;
-    background-color:  #5a6329  ;
+    background-color: #00F7FF;
     border: 1px solid black;
     width: calc(100% - 10px);
     margin: 5px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 
 .header-img{
     float: left;
