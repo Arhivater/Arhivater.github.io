@@ -225,28 +225,35 @@ height: 60px;
 
 .ZaglavStroka {
 background-color: #CD853F;
+font-family:  cursive;
 }
 
 .Stroka1 {
+font-family:  sans-serif;
 background-color:  #d2ea4e ;
 }
 
 .Stroka2 {
+font-family:  serif;	
 background-color:   #eaaf4e  ;
 }
 
 .Stroka3 {
 background-color:   #df7030  ;
+font-family:  sans-serif;
 }
 
 .Stroka4 {
 background-color:  #aadf30  ;
+font-family:  serif;	
 }
 
 .Stroka5 {
 background-color:   #30dfa7 ;
+font-family:  sans-serif;
 }
 
 .Stroka6 {
 background-color:   #b530df  ;
+font-family:  serif;	
 }
