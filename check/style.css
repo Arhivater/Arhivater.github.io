@@ -2,31 +2,31 @@ body{
     padding: 0px;
     margin: 0px;
     font-size: 20px;
-    background-color: #393939;
+    background-color: #b1d91d ;
 }
 
 h3{
     font-weight: normal;
     margin-left: 40px;
-    color: #BCBCBC;
+    color: #0cb506 ;
 }
 
 p{
     text-indent: 30px;
-    color: #BCBCBC;
+    color:  #0cb506 ;
 }
 
 table{
     border-collapse: collapse;
-    color: #BCBCBC;
+    color:  #0cb506 ;
 }
 
 td,th{
-    border: 3px solid #BCBCBC;;
+    border: 3px solid  #0cb506 ;;
 }
 
 ul, ol, li{
-    color: #BCBCBC;
+    color:  #0cb506 ;
 }
 
 .border-box{
@@ -51,7 +51,7 @@ ul, ol, li{
 
 .turquoise-box{
     box-sizing: border-box;
-    background-color: #5A5A5A;
+    background-color:  #5a6329  ;
     border: 1px solid black;
     width: calc(100% - 10px);
     margin: 5px;
@@ -66,7 +66,7 @@ ul, ol, li{
 
 .yellow-box{
     box-sizing: border-box;
-    background-color: #5A5A5A;
+    background-color:  #5a6329 ;
     border: 1px solid black;
     width: calc(100% - 10px);
     margin: 5px;
@@ -95,7 +95,7 @@ ul, ol, li{
 
 .boow{
     border: 1px solid #F5F5F5;
-    background-color: #6C6C6C;
+    background-color:  #5a6329 ;
 }
 
 .red{
