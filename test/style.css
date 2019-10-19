@@ -23,8 +23,8 @@ td,th{
 
 .border-box{
     box-sizing: border-box;
-    border-left: 10px solid #808080;
-    border-bottom: 20px solid #808080;
+   /* border-left: 10px solid #808080;
+    border-bottom: 20px solid #808080; */
     width: calc(100% - 940px);
     height: auto;
     margin: 50px;
