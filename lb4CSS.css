@@ -32,7 +32,7 @@ body{
 }
 
 table {
-border: 2px solid blue;
+border: 2px solid greenyellow;
 }
 
 
@@ -134,7 +134,7 @@ height: 60px;
 	display: none;
 	background-color: #228B22;
 	color: #000000;
-	width: 510px;
+	width: 535px;
 	height: 600px;
 	margin: auto;
 }
