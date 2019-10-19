@@ -2,7 +2,7 @@ body{
     padding: 0px;
     margin: 0px;
     font-size: 20px;
-    background-color: #b1d91d ;
+    background-color: #a9bd61 ;
 }
 
 h3{
@@ -31,22 +31,19 @@ ul, ol, li{
 
 .border-box{
     box-sizing: border-box;
-    /* border-left: 10px solid #BCBCBC;
-    border-bottom: 20px solid #BCBCBC; */
-    width: calc(100% - 940px);
+    
     height: auto;
-    margin: 50px;
-    margin-left: 420px;
-    padding-top: 80px;
+    margin: 25px;
+    margin-left: 25%;
+    padding-top: 5px;
     padding-bottom: 80px;
     background-color: inherit;
 }
 
-.main-box{
-   /* box-sizing: border-box;
-    margin-left: 100px; */
+
+.main-box{  
+    width: 50%;    
     height: 100%;
-    width: 210mm;
     background-color:   #992abd ; 
     padding-top: 2cm;
     padding-bottom: 2cm;
