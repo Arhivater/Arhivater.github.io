@@ -1,7 +1,8 @@
 body{
     padding: 0px;
     margin: 0px;
-    font-size: 20px
+    font-size: 20px;
+    background-color: #505050 ;
 }
 
 h3{
@@ -21,24 +22,28 @@ td,th{
     border: 3px solid black;
 }
 
+ul, ol, li{
+    color:  #000000 ;
+}
+
 .border-box{
-    /*box-sizing: border-box;
-    border-left: 10px solid #808080;
-    border-bottom: 20px solid #808080; */
-    width: 210mm;
+    box-sizing: border-box;
+    
     height: auto;
-    margin: auto;
-    
- 
-    
+    margin: 25px;
+    margin-left: 25%;
+    padding-top: 5px;
+    padding-bottom: 80px;
+    background-color: inherit;
 }
 
 .main-box{
-   /* box-sizing: border-box;
-    margin-left: 100px; */
+  
+    width: 50%;
+    
     height: 100%;
-    width: 210mm;
-    background-color:    #b9aabd  ; 
+    
+    background-color:   #ffffff ; 
     padding-top: 2cm;
     padding-bottom: 2cm;
     padding-left:  3cm;
