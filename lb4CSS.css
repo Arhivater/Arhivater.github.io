@@ -42,6 +42,8 @@ th,td {
   	text-align: center;
 }
 
+
+
 .st1 {
     background-color: #ced9b7;
     font-family: monospace;
@@ -221,3 +223,30 @@ height: 60px;
 	width: 100%;
 }
 
+.ZaglavStroka {
+background-color: #CD853F;
+}
+
+.Stroka1 {
+background-color:  #d2ea4e ;
+}
+
+.Stroka2 {
+background-color:   #eaaf4e  ;
+}
+
+.Stroka3 {
+background-color:   #df7030  ;
+}
+
+.Stroka4 {
+background-color:  #aadf30  ;
+}
+
+.Stroka5 {
+background-color:   #30dfa7 ;
+}
+
+.Stroka6 {
+background-color:   #b530df  ;
+}
