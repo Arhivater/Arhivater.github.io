@@ -235,12 +235,12 @@ th:first-child {
 	font-family:  cursive;
 } 
 
-th:nth-child(odd) {
+td:nth-child(odd) {
 	font-family:  sans-serif;
 	background-color:  #d2ea4e ;
 }
 
-th:nth-child(even) {
+td:nth-child(even) {
 	font-family:  serif;	
 	background-color:   #eaaf4e  ;
 }
