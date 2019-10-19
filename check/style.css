@@ -31,8 +31,8 @@ ul, ol, li{
 
 .border-box{
     box-sizing: border-box;
-    border-left: 10px solid #BCBCBC;
-    border-bottom: 20px solid #BCBCBC;
+    /* border-left: 10px solid #BCBCBC;
+    border-bottom: 20px solid #BCBCBC; */
     width: calc(100% - 940px);
     height: auto;
     margin: 50px;
