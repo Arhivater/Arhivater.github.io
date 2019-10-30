@@ -55,4 +55,4 @@ function resetAnswer(quest) {
 };
 
 let array = new Array(10);
-let trueArray = ['1', '4', '2', '3', '123', '24', '4', 'a', 'html', 'ol'];
+let trueArray = ['1', '4', '2', '3', '123', '14', '4', 'a', 'html', 'ol'];
