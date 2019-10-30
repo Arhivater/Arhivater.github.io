@@ -47,7 +47,7 @@ function checkTrue(){
         }
 
     }
-    document.getElementById('place-for-result').innerHTML='Количество правильных ответов: ' + t;
+    document.getElementById('place-for-result').innerHTML='Ваш резульат: ' + t + ' правильных ответов';
 };
 
 function resetAnswer(quest) {
