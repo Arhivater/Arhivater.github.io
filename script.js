@@ -53,6 +53,5 @@ function checkTrue(){
 function resetAnswer(quest) {
     array[quest] = undefined;
 };
-
 let array = new Array(10);
 let trueArray = ['1', '4', '2', '3', '123', '14', '15', '6', 'Иллидану', 'Анубарак'];
