@@ -45,5 +45,5 @@ p{
 
 ol li:before{
 	counter-increment: myCounter;
-	content: counters(myCounter, ".") ")";
+	content: counters(myCounter) ")";
 }
