@@ -52,6 +52,10 @@ ol li{
 	list-style: none;
 }
 
+li{
+paiding-button: 10;
+}
+
 ol li:before{
 	counter-increment: myCounter;
 	content: counters(myCounter, ".") ") ";
