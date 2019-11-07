@@ -43,7 +43,16 @@ p{
     padding-right: 1.5cm;
 }
 
+
+ol{
+	counter-reset: myCounter;
+}
+
+ol li{
+	list-style: none;
+}
+
 ol li:before{
 	counter-increment: myCounter;
-	content: counters(myCounter, ")");
+	content: counters(myCounter, ".") ") ";
 }
