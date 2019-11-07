@@ -42,3 +42,8 @@ p{
     padding-left:  3cm;
     padding-right: 1.5cm;
 }
+
+ol li:before{
+	counter-increment: myCounter;
+	content: counters(myCounter, ".") ")";
+}
