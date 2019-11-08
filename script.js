@@ -62,3 +62,7 @@ document.getElementById("proverka").disabled = true;
 function enable() {
 document.getElementById("proverka").disabled = false;
 }
+
+function restart() {
+document.getElementById("proverka").checked = false;
+}
