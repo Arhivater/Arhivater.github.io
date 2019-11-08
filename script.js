@@ -84,6 +84,7 @@ function checkTrue(){
         else {
             if (array[i] == trueArray[i]){
                 t++;
+                document.forms[i].style.background = "green";
             }
             else {
             document.forms[i].style.background = "red";
