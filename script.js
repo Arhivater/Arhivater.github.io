@@ -58,6 +58,7 @@ let trueArray = ['1', '4', '2', '3', '123', '14', '15', '6', 'Иллидану',
 
 function disable() {
 document.getElementById("proverka").disabled = true;
+document.getElementById("Checkbox").checked = false;
 }
 function enable() {
 document.getElementById("proverka").disabled = false;
