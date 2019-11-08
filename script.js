@@ -27,15 +27,13 @@ function resetAnswer(quest) {
 let array = new Array(10);
 let trueArray = ['1', '4', '2', '3', '123', '14', '15', '6', 'Иллидану', 'Анубарак'];
 
-function disable() {
-document.getElementById("proverka").disabled = true;
-     
-        var disable=document.getElementsByTagName('input');
-        for(var i=0;i<uncheck.length;i++) {
-            if(uncheck[i].type=='checkbox'){
-                uncheck[i].disabled = true;
-            }
-        }   
+function disable(){
+ var uncheck=document.getElementsByTagName('input');
+ for(var i=0;i<uncheck.length;i++) {
+  if(uncheck[i].type=='checkbox') {
+   uncheck[i].disabled = true;
+  }
+ }
 };
 
 function uncheck(){
