@@ -38,12 +38,13 @@ document.getElementById("proverka").disabled = true;
         
 };
 
-function restart() {
-    var uncheck=document.getElementsByTagName('input');
-        for(var i=0;i<uncheck.length;i++) {
-            if(uncheck[i].type=='checkbox'){
-                uncheck[i].checked=false;
-        }
+function uncheck(){
+ var uncheck=document.getElementsByTagName('input');
+ for(var i=0;i<uncheck.length;i++) {
+  if(uncheck[i].type=='checkbox')  {
+   uncheck[i].checked=false;
+  }
+ }
 }
     
 document.getElementById("proverka").disabled = false;
