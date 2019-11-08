@@ -58,7 +58,8 @@ for(var i=0;i<uncheck.length;i++) {
    uncheck[i].value = "";
   }
  }   
-    
+   this.style.backgroundColor = "red";
+ 
 };
 
 function checkTrue(){
@@ -83,6 +84,10 @@ function checkTrue(){
         else {
             if (array[i] == trueArray[i]){
                 t++;
+            }
+            else {
+            var color = document.getElementsByTagName('li');
+            color.style.backgroundColor = "red";
             }
         }
 
