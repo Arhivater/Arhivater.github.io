@@ -48,16 +48,11 @@ function uncheck(){
  for(var i=0;i<uncheck.length;i++) {
   if(uncheck[i].type=='checkbox')  {
    uncheck[i].checked=false;
-  }
- }
-
- for(var i=0;i<uncheck.length;i++) {
-  if(uncheck[i].type=='checkbox') {
    uncheck[i].disabled = false;
   }
- }    
- 
-  for(var i=0;i<uncheck.length;i++) {
+ }
+   
+for(var i=0;i<uncheck.length;i++) {
   if(uncheck[i].type=='text') {
    uncheck[i].disabled = false;
    uncheck[i].value = "";
