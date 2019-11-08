@@ -34,6 +34,14 @@ function disable(){
    uncheck[i].disabled = true;
   }
  }
+    
+var uncheck=document.getElementsByTagName('input');
+ for(var i=0;i<uncheck.length;i++) {
+  if(uncheck[i].type=='text') {
+   uncheck[i].disabled = true;
+  }
+ }
+
 };
 
 function uncheck(){
