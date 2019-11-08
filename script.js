@@ -35,7 +35,7 @@ document.getElementById("proverka").disabled = true;
             if(uncheck[i].type=='checkbox'){
                 uncheck[i].disabled = true;
             }
-        
+        }   
 };
 
 function uncheck(){
