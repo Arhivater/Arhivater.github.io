@@ -35,7 +35,6 @@ function disable(){
   }
  }
     
-var uncheck=document.getElementsByTagName('input');
  for(var i=0;i<uncheck.length;i++) {
   if(uncheck[i].type=='text') {
    uncheck[i].disabled = true;
@@ -57,6 +56,13 @@ function uncheck(){
    uncheck[i].disabled = false;
   }
  }    
+ 
+  for(var i=0;i<uncheck.length;i++) {
+  if(uncheck[i].type=='text') {
+   uncheck[i].disabled = false;
+   uncheck[i].value = "";
+  }
+ }   
     
 };
 
