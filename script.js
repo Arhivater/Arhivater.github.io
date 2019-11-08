@@ -86,8 +86,7 @@ function checkTrue(){
                 t++;
             }
             else {
-            var color = document.getElementsByTagName('li');
-            color.style.backgroundColor = "red";
+            document.forms[i].style.background = "red";
             }
         }
 
