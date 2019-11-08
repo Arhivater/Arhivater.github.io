@@ -46,10 +46,6 @@ function uncheck(){
   }
  }
 }
-    
-document.getElementById("proverka").disabled = false;
-};
-
 
 function checkTrue(){
     let t = 0;
