@@ -55,3 +55,10 @@ function resetAnswer(quest) {
 };
 let array = new Array(10);
 let trueArray = ['1', '4', '2', '3', '123', '14', '15', '6', 'Иллидану', 'Анубарак'];
+
+function disable() {
+document.getElementById("check").disabled = true;
+}
+function enable() {
+document.getElementById("check").disabled = false;
+}
