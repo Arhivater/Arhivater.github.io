@@ -23,13 +23,3 @@
 
 </body>
 </html>
-
-
-$(function() {
-    enable_cb();
-    $("#group1").click(enable_cb);
-});
-
-function enable_cb() {
-    $("input.group1").prop("disabled", !this.checked);
-}
