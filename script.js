@@ -21,6 +21,24 @@ function checkArray(){
     }
 };
 
+function resetAnswer(quest) {
+    array[quest] = undefined;
+};
+let array = new Array(10);
+let trueArray = ['1', '4', '2', '3', '123', '14', '15', '6', 'Иллидану', 'Анубарак'];
+
+function disable() {
+document.getElementById("proverka").disabled = true;
+};
+function enable() {
+document.getElementById("proverka").disabled = false;
+};
+
+function restart() {
+document.getElementById("proverka").checked = false;
+};
+
+
 function checkTrue(){
     let t = 0;
     for (let i = 0; i < array.length; i++) {
@@ -49,20 +67,3 @@ function checkTrue(){
     }
     document.getElementById('place-for-result').innerHTML='Ваш резульат: ' + t + ' правильных ответов';
 };
-
-function resetAnswer(quest) {
-    array[quest] = undefined;
-};
-let array = new Array(10);
-let trueArray = ['1', '4', '2', '3', '123', '14', '15', '6', 'Иллидану', 'Анубарак'];
-
-function disable() {
-document.getElementById("proverka").disabled = true;
-}
-function enable() {
-document.getElementById("proverka").disabled = false;
-}
-
-function restart() {
-document.getElementById("proverka").checked = false;
-}
