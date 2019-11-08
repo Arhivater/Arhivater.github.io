@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<title>Page Title</title>
+</head>
+<body>
+
+
+<form name="frmChkForm" id="frmChkForm">
+    <input type="checkbox" name="chkcc9" id="group1" />Check Me
+    <input type="checkbox" name="chk9[120]" class="group1" />
+    <input type="checkbox" name="chk9[140]" class="group1" />
+    <input type="checkbox" name="chk9[150]" class="group1" />
+</form>
+
+<input type="button" onclick="callFunction()" value="Click" />
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+$(function() {
+    enable_cb();
+    $("#group1").click(enable_cb);
+});
+
+function enable_cb() {
+    $("input.group1").prop("disabled", !this.checked);
+}
