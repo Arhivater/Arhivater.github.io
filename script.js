@@ -45,7 +45,7 @@ function uncheck(){
    uncheck[i].checked=false;
   }
  }
-}
+};
 
 function checkTrue(){
     let t = 0;
