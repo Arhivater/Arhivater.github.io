@@ -22,7 +22,9 @@ function checkArray(){
 };
 
 function clearBG(){
-document.forms.style.background = "white";
+    for (let i = 0; i < array.length; i++) {
+        document.forms[i].style.background = "white";
+    }
 }
 
 function resetAnswer(quest) {
