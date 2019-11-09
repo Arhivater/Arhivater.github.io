@@ -23,7 +23,7 @@ function checkArray(){
 
 function clearBG(){
     for (let i = 0; i < array.length; i++) {
-        document.forms[i].style.background = "white";
+        document.forms[i].style.backgroundColor = "white";
     }
 }
 
