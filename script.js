@@ -79,7 +79,9 @@ function checkTrue(){
             }
             if (x == trueArray[i].length) {
                 t++;
+                document.forms[i].style.background = "green";
             }
+            
         }
         else {
             if (array[i] == trueArray[i]){
