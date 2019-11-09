@@ -34,6 +34,12 @@ function disable(){
    uncheck[i].disabled = true;
   }
  }
+   
+ for(var i=0;i<uncheck.length;i++) {
+  if(uncheck[i].type=='radio') {
+   uncheck[i].disabled = true;
+  }
+ }   
     
  for(var i=0;i<uncheck.length;i++) {
   if(uncheck[i].type=='text') {
@@ -47,6 +53,13 @@ function uncheck(){
  var uncheck=document.getElementsByTagName('input');
  for(var i=0;i<uncheck.length;i++) {
   if(uncheck[i].type=='checkbox')  {
+   uncheck[i].checked=false;
+   uncheck[i].disabled = false;
+  }
+ }
+    
+ for(var i=0;i<uncheck.length;i++) {
+  if(uncheck[i].type=='radio') {
    uncheck[i].checked=false;
    uncheck[i].disabled = false;
   }
