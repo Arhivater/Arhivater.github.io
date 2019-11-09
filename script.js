@@ -21,6 +21,10 @@ function checkArray(){
     }
 };
 
+function clearBG(){
+document.forms.style.background = "white";
+}
+
 function resetAnswer(quest) {
     array[quest] = undefined;
 };
