@@ -1,8 +1,9 @@
 function loadTable(){
     let myTable = document.getElementById("iTable");
-    let fild_size = document.getElementById("filed_size").value;
-    let nx = fild_size;
-    let ny = fild_size;
+    let fild_width = document.getElementById("filed_width").value;
+    let fild_hight = document.getElementById("filed_hight").value;
+    let nx = fild_width;
+    let ny = fild_hight;
     myTable.innerHTML = "";
     for (let i=0; i < nx; ++i){
         let newTableLine = document.createElement("tr");
