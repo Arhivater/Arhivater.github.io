@@ -1,4 +1,15 @@
-td{
-  width: 20px;
-  hight: 20px;
+th, td{
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+table{
+  width:  500px;
+  height: 500px;
+  animation-delay: : center;
+}
+
+.fig {
+   text-align: center; /* Выравнивание по центру */ 
 }
