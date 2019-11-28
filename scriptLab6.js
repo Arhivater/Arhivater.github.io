@@ -33,7 +33,7 @@ function cellMouseDown(e) {
     
     switch (e.which) {
         case 1:
-            if (this.style.backgroundImage == "") {
+            if (this.innerHTML == "") {
             //this.style.backgroundImage = "url(crug.png)";
             if (this.innerHTML = ""){
             this.cellStatus =   "O";
