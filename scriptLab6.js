@@ -60,7 +60,16 @@ function cellMouseDown(e) {
     }
 }
 
-
+function CheckDirection(row, cell, typeField, directionRow, directionCell) {
+    let currentRow = row + directionRow;
+    let currentCell = cell + directionCell;
+    let id = "cell_" + (currentRow + 1) + "_" + (currentCell + 1);
+    let myCell = document.getElementById(id);
+    if (myCell != null && typeField == myCell.cellStatus) {
+        return 1 + ChecDirection(currentRow, currentCell, typeField, directionRow, directionCell);
+    }
+    return 0;
+}
     
     function VictoryCheck(row, cell, typeField) {
     let HorizontalCheck = 1 + CheckDirection(row, cell, typeField, 0, -1) + ChecDirection(row, cell, typeField, 0, 1);
@@ -76,18 +85,6 @@ function cellMouseDown(e) {
     }
    // else if (CheckDrow())
     //    document.getElementById("Cross").innerHTML = "Ничья";
-}
-
-function CheckDirection(row, cell, typeField, directionRow, directionCell) {
-    let currentRow = row + directionRow;
-    let currentCell = cell + directionCell;
-    let id = "cell_" + (currentRow + 1) + "_" + (currentCell + 1);
-    let myCell = document.getElementById(id);
-    if (myCell != null && typeField == myCell.cellStatus) {
-        return 1 + ChecDirection(currentRow, currentCell, typeField, directionRow, directionCell);
-    }
-    return 0;
-}
-    
+}    
 
 document.oncontextmenu = function () {return false;};
