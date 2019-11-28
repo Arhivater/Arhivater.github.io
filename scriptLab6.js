@@ -32,16 +32,16 @@ function cellMouseDown(e) {
         case 1:
             if (this.style.backgroundImage == "") {
             //this.style.backgroundImage = "url(crug.png)";
-            this.innerHTML = "O";
+            this.cellStatus =  = "O";
             //this.innerHTML = this.;cellStatus
-            VictoryCheck(this.id, "crug");
+            VictoryCheck(index1, index2, this.cellStatus);
         }
             break;
         case 3:
             if (this.style.backgroundImage == "") {
                 //this.style.backgroundImage = "url(crest.png)";
-                this.innerHTML = "X";
-                VictoryCheck(this.id, ,"crest");
+                this.cellStatus = = "X";
+                VictoryCheck(index1, index2, this.cellStatus);
             }
             break;
     }
