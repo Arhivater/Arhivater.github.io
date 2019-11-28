@@ -35,14 +35,15 @@ function cellMouseDown(e) {
         case 1:
             if (this.style.backgroundImage == "") {
             //this.style.backgroundImage = "url(crug.png)";
+            if (this.innerHTML = ""){
             this.cellStatus =   "O";
             this.innerHTML = "O";
-            document.getElementById("X").style.display = "block";
-            document.getElementById("O").style.display = "none";
             VictoryCheck(index1, index2, this.cellStatus);
+            }
         }
             break;
         case 2:
+             if (this.innerHTML = ""){
             if (turn == 2){
                 this.cellStatus =   "O";
                 this.innerHTML = "O";
@@ -51,18 +52,19 @@ function cellMouseDown(e) {
                 this.cellStatus =   "X";
                 this.innerHTML = "X";
                 ++turn; 
-            }
+                }
             VictoryCheck(index1, index2, this.cellStatus);
+             }
             break;
         case 3:
+             if (this.innerHTML = ""){
             if (this.style.backgroundImage == "") {
                 //this.style.backgroundImage = "url(crest.png)";
                 this.cellStatus =  "X";
                 this.innerHTML = "X";
-                document.getElementById("O").style.display = "block";
-                document.getElementById("X").style.display = "none";
                 VictoryCheck(index1, index2, this.cellStatus);
-            }
+                }
+             }
             break;
     }
 }
