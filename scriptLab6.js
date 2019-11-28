@@ -42,12 +42,12 @@ function cellMouseDown(e) {
             break;
         case 2:
             if (turn == 2){
-               // this.cellStatus =   "O";
-               // this.innerHTML = "O";
+                this.cellStatus =   "O";
+                this.innerHTML = "O";
                 --turn;
             } else {
-               // this.cellStatus =   "X";
-              //  this.innerHTML = "X";
+                this.cellStatus =   "X";
+                this.innerHTML = "X";
                 ++turn; 
             }
             VictoryCheck(index1, index2, this.cellStatus);
