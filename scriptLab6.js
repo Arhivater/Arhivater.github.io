@@ -73,7 +73,7 @@ function CheckDirection(row, cell, typeField, directionRow, directionCell)
     return 0;
 }
     
-    function CheckWin(row, cell, typeField) {
+    function VictoryCheck(row, cell, typeField) {
     let HorizontalCheck = CheckDirection(row, cell, typeField, 0, -1) + CheckDirection(row, cell, typeField, 0, 1) + 1;
     let VerticalСheck = CheckDirection(row, cell, typeField, -1, 0) + CheckDirection(row, cell, typeField, 1, 0) + 1;
     let DecreasegDiagonalСheck = CheckDirection(row, cell, typeField, -1, -1) + CheckDirection(row, cell, typeField, 1, 1) + 1;
