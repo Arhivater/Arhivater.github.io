@@ -43,7 +43,7 @@ function cellMouseDown(e) {
         }
             break;
         case 2:
-             if (this.innerHTML = ""){
+             if (this.innerHTML == ""){
             if (turn == 2){
                 this.cellStatus =   "O";
                 this.innerHTML = "O";
@@ -57,7 +57,7 @@ function cellMouseDown(e) {
              }
             break;
         case 3:
-             if (this.innerHTML = ""){
+             if (this.innerHTML == ""){
             if (this.style.backgroundImage == "") {
                 //this.style.backgroundImage = "url(crest.png)";
                 this.cellStatus =  "X";
