@@ -1,3 +1,4 @@
+let VictoryСondition = 5;
 function loadTable(){
     let myTable = document.getElementById("iTable");
     let fild_width = document.getElementById("filed_width").value;
@@ -24,6 +25,8 @@ function loadTable(){
 
 function cellMouseDown(e) {
     e = e || window.event;
+    let index1 = el.closest("tr").rowIndex;
+    let index2 = el.closest("td").cellIndex;
     //alert(e.which);
     switch (e.which) {
         case 1:
@@ -38,7 +41,7 @@ function cellMouseDown(e) {
             if (this.style.backgroundImage == "") {
                 //this.style.backgroundImage = "url(crest.png)";
                 this.innerHTML = "X";
-                VictoryCheck(this.id, "crest");
+                VictoryCheck(this.id, ,"crest");
             }
             break;
     }
@@ -59,7 +62,7 @@ function CheckDirection(row, cell, typeField, directionRow, directionCell)
 
 Function VictoryCheck (row, cell, typefield)
 {
-    let VictoryСondition = 5;
+    
     let HorizontalCheck =  CheckDirection(row,cell,typeField, 0, -1) + CheckDirection(row,cell,typeField, 0, 1) + 1;
     let VerticalСheck = CheckDirection(row,cell,typeField, -1, 0) + CheckDirection(row,cell,typeField, 1, 0) + 1;
     let DecreasegDiagonalСheck =  CheckDirection(row,cell,typeField, -1, -1) + CheckDirection(row,cell,typeField, 1, 1) + 1;
