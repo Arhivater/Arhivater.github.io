@@ -37,6 +37,7 @@ function cellMouseDown(e) {
             //this.style.backgroundImage = "url(crug.png)";
             this.cellStatus =   "O";
             this.innerHTML = "O";
+            document.getElementById("X").style.display = "block";
             VictoryCheck(index1, index2, this.cellStatus);
         }
             break;
@@ -57,6 +58,7 @@ function cellMouseDown(e) {
                 //this.style.backgroundImage = "url(crest.png)";
                 this.cellStatus =  "X";
                 this.innerHTML = "X";
+                document.getElementById("O").style.display = "block";
                 VictoryCheck(index1, index2, this.cellStatus);
             }
             break;
