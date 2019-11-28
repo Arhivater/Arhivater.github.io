@@ -78,9 +78,9 @@ function CheckDirection(row, cell, typeField, directionRow, directionCell)
     let DecreasegDiagonalСheck = CheckDirection(row, cell, typeField, -1, -1) + CheckDirection(row, cell, typeField, 1, 1) + 1;
     let IncreasingDiagonalСheck = CheckDirection(row, cell, typeField, -1, 1) + CheckDirection(row, cell, typeField, 1, -1) + 1;
      if (HorizontalCheck >= VictoryСondition || VerticalСheck >= VictoryСondition || DecreasegDiagonalСheck >= VictoryСondition || IncreasingDiagonalСheck >= VictoryСondition) {
-        if (typeField == "2")
+       // if (typeField == "2")
            // document.getElementById("Cross").innerHTML = "Победил Альянс";
-        else if (typeField == "1")
+       // else if (typeField == "1")
        //     document.getElementById("Cross").innerHTML = "Победила Орда";
        // document.getElementById("Table1").style.display = "none";
     }
