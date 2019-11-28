@@ -36,7 +36,7 @@ function cellMouseDown(e) {
             if (this.style.backgroundImage == "") {
             //this.style.backgroundImage = "url(crug.png)";
             this.cellStatus =   "O";
-            //this.innerHTML = this.;cellStatus
+            this.innerHTML = "O";
             VictoryCheck(index1, index2, this.cellStatus);
         }
             break;
@@ -46,6 +46,7 @@ function cellMouseDown(e) {
                 --turn;
             } else {
                 this.cellStatus =   "X";
+                this.innerHTML = "X";
                 ++turn; 
             }
             VictoryCheck(index1, index2, this.cellStatus);
@@ -54,6 +55,7 @@ function cellMouseDown(e) {
             if (this.style.backgroundImage == "") {
                 //this.style.backgroundImage = "url(crest.png)";
                 this.cellStatus =  "X";
+                this.innerHTML = "X";
                 VictoryCheck(index1, index2, this.cellStatus);
             }
             break;
@@ -77,9 +79,9 @@ function CheckDirection(row, cell, typeField, directionRow, directionCell) {
     let DecreasegDiagonalСheck = 1 + CheckDirection(row, cell, typeField, -1, -1) + CheckDirection(row, cell, typeField, 1, 1);
     let IncreasingDiagonalСheck = 1 + CheckDirection(row, cell, typeField, -1, 1) + CheckDirection(row, cell, typeField, 1, -1);
      if (HorizontalCheck >= VictoryСondition || VerticalСheck >= VictoryСondition || DecreasegDiagonalСheck >= VictoryСondition || IncreasingDiagonalСheck >= VictoryСondition) {
-       // if (typeField == "2")
-           // document.getElementById("Cross").innerHTML = "Победил Альянс";
-       // else if (typeField == "1")
+        if (typeField == "2")
+            alert("Zero Win! ");
+        else if (typeField == "1")
        //     document.getElementById("Cross").innerHTML = "Победила Орда";
        // document.getElementById("Table1").style.display = "none";
     }
