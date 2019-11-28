@@ -60,18 +60,7 @@ function cellMouseDown(e) {
     }
 }
 
-function CheckDirection(row, cell, typeField, directionRow, directionCell)
-{
-    let currentRow = row + directionRow;
-    let currentCell = cell + directionCell;
-    let id = "cell_" + (currentRow + 1) + "_" + (currentCell + 1);
-    let myCell = document.getelementByid(id);
-    if (myCell != null && typeField == myCell.cellStatus)
-    {
-        return 1 + CheckDirection(currentRow, currentCell, typeField, directionRow, directionCell);
-    }
-    return 0;
-}
+
     
     function VictoryCheck(row, cell, typeField) {
     let HorizontalCheck = CheckDirection(row, cell, typeField, 0, -1) + CheckDirection(row, cell, typeField, 0, 1) + 1;
@@ -87,6 +76,19 @@ function CheckDirection(row, cell, typeField, directionRow, directionCell)
     }
    // else if (CheckDrow())
     //    document.getElementById("Cross").innerHTML = "Ничья";
+}
+
+function CheckDirection(row, cell, typeField, directionRow, directionCell)
+{
+    let currentRow = row + directionRow;
+    let currentCell = cell + directionCell;
+    let id = "cell_" + (currentRow + 1) + "_" + (currentCell + 1);
+    let myCell = document.getelementByid(id);
+    if (myCell != null && typeField == myCell.cellStatus)
+    {
+        return 1 + CheckDirection(currentRow, currentCell, typeField, directionRow, directionCell);
+    }
+    return 0;
 }
     
 
