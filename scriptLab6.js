@@ -28,7 +28,7 @@ function cellMouseDown(e) {
     switch (e.which) {
         case 1:
             if (this.style.backgroundImage == "") {
-            this.style.backgroundImage = "url(crug.png)";
+            //this.style.backgroundImage = "url(crug.png)";
             this.innerHTML = "O";
             //this.innerHTML = this.;cellStatus
             VictoryCheck(this.id, "crug");
@@ -36,7 +36,7 @@ function cellMouseDown(e) {
             break;
         case 3:
             if (this.style.backgroundImage == "") {
-                this.style.backgroundImage = "url(crest.png)";
+                //this.style.backgroundImage = "url(crest.png)";
                 this.innerHTML = "X";
                 VictoryCheck(this.id, "crest");
             }
@@ -69,12 +69,12 @@ Function VictoryCheck (row, cell, typefield)
     {
         if (typeFiled == "crest")
         {   
-            document.getElementById("Cross").innerHTML = "X Victory";
+           // document.getElementById("Cross").innerHTML = "X Victory";
         } else if (typefield == "crug")
           {
-            document.getElementById("Cross").innerHTML = "O Victory";
+           // document.getElementById("Cross").innerHTML = "O Victory";
           }
-        document.getElementById("MyTable").style.display = "none";
+      //  document.getElementById("MyTable").style.display = "none";
     }    
 }
 
