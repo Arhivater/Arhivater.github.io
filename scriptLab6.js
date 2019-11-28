@@ -78,15 +78,13 @@ function cellMouseDown(e) {
     //    document.getElementById("Cross").innerHTML = "Ничья";
 }
 
-function CheckDirection(row, cell, typeField, directionRow, directionCell)
-{
+function ChecDirection(row, cell, typeField, directionRow, directionCell) {
     let currentRow = row + directionRow;
     let currentCell = cell + directionCell;
     let id = "cell_" + (currentRow + 1) + "_" + (currentCell + 1);
-    let myCell = document.getelementByid(id);
-    if (myCell != null && typeField == myCell.cellStatus)
-    {
-        return 1 + CheckDirection(currentRow, currentCell, typeField, directionRow, directionCell);
+    let myCell = document.getElementById(id);
+    if (myCell != null && typeField == myCell.cellStatus) {
+        return 1 + ChecDirection(currentRow, currentCell, typeField, directionRow, directionCell);
     }
     return 0;
 }
