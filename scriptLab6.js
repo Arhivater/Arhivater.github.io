@@ -87,10 +87,10 @@ function CheckDirection(row, cell, typeField, directionRow, directionCell) {
     let DecreasegDiagonalСheck = 1 + CheckDirection(row, cell, typeField, -1, -1) + CheckDirection(row, cell, typeField, 1, 1);
     let IncreasingDiagonalСheck = 1 + CheckDirection(row, cell, typeField, -1, 1) + CheckDirection(row, cell, typeField, 1, -1);
      if (HorizontalCheck >= VictoryСondition || VerticalСheck >= VictoryСondition || DecreasegDiagonalСheck >= VictoryСondition || IncreasingDiagonalСheck >= VictoryСondition) {
-        if (typeField == "2"){
+        if (typeField == "O"){
             alert("Zero Win! ");
         }
-        else if (typeField == "1"){
+        else if (typeField == "X"){
             alert("Сross Win! ");
         }
        //     document.getElementById("Cross").innerHTML = "Победила Орда";
