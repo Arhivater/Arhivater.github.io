@@ -26,6 +26,7 @@ function loadTable(){
 
 function cellMouseDown(e) {
     e = e || window.event;
+    let el = e.target || e.srcElement;
     let index1 = el.closest("tr").rowIndex;
     let index2 = el.closest("td").cellIndex;
     //alert(e.which);
