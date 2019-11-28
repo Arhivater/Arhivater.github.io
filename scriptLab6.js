@@ -83,7 +83,7 @@ function VictoryCheck(row, cell, typeField) {
         }else if (typeField == "X")
            // document.getElementById("Cross").innerHTML = "Победила Орда";
        // document.getElementById("Table1").style.display = "none";
-    } //else if (CheckDrow()){
+   // } //else if (CheckDrow()){
        // document.getElementById("Cross").innerHTML = "Ничья";
    // }
 }
