@@ -33,13 +33,14 @@ function cellMouseDown(e) {
     
     switch (e.which) {
         case 1:
-            if (this.innerHTML == "") {
-            //this.style.backgroundImage = "url(crug.png)";
-            if (this.innerHTML = ""){
-            this.cellStatus =   "O";
-            this.innerHTML = "O";
-            VictoryCheck(index1, index2, this.cellStatus);
-            }
+            if (this.innerHTML == ""){
+           // if (this.style.backgroundImage == "") {
+                //this.style.backgroundImage = "url(crest.png)";
+                this.cellStatus =  "O";
+                this.innerHTML = "O";
+                VictoryCheck(index1, index2, this.cellStatus);
+                }
+            // }
         }
             break;
         case 2:
