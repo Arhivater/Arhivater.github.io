@@ -72,10 +72,10 @@ function CheckDirection(row, cell, typeField, directionRow, directionCell) {
 }
     
     function VictoryCheck(row, cell, typeField) {
-    let HorizontalCheck = 1 + CheckDirection(row, cell, typeField, 0, -1) + ChecDirection(row, cell, typeField, 0, 1);
-    let VerticalСheck = 1 + CheckDirection(row, cell, typeField, -1, 0) + ChecDirection(row, cell, typeField, 1, 0);
-    let DecreasegDiagonalСheck = 1 + CheckDirection(row, cell, typeField, -1, -1) + ChecDirection(row, cell, typeField, 1, 1);
-    let IncreasingDiagonalСheck = 1 + CheckDirection(row, cell, typeField, -1, 1) + ChecDirection(row, cell, typeField, 1, -1);
+    let HorizontalCheck = 1 + CheckDirection(row, cell, typeField, 0, -1) + CheckDirection(row, cell, typeField, 0, 1);
+    let VerticalСheck = 1 + CheckDirection(row, cell, typeField, -1, 0) + CheckDirection(row, cell, typeField, 1, 0);
+    let DecreasegDiagonalСheck = 1 + CheckDirection(row, cell, typeField, -1, -1) + CheckDirection(row, cell, typeField, 1, 1);
+    let IncreasingDiagonalСheck = 1 + CheckDirection(row, cell, typeField, -1, 1) + CheckDirection(row, cell, typeField, 1, -1);
      if (HorizontalCheck >= VictoryСondition || VerticalСheck >= VictoryСondition || DecreasegDiagonalСheck >= VictoryСondition || IncreasingDiagonalСheck >= VictoryСondition) {
        // if (typeField == "2")
            // document.getElementById("Cross").innerHTML = "Победил Альянс";
