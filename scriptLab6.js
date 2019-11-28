@@ -78,14 +78,14 @@ function VictoryCheck(row, cell, typeField) {
     let DecreasegDiagonalСheck = CheckDirection(row, cell, typeField, -1, -1) + CheckDirection(row, cell, typeField, 1, 1) + 1;
     let IncreasingDiagonalСheck = CheckDirection(row, cell, typeField, -1, 1) + CheckDirection(row, cell, typeField, 1, -1) + 1;
      if (HorizontalCheck >= VictoryСondition || VerticalСheck >= VictoryСondition || DecreasegDiagonalСheck >= VictoryСondition || IncreasingDiagonalСheck >= VictoryСondition) {
-        if (typeField == "crest")
+        if (typeField == "crest"){
            // document.getElementById("Cross").innerHTML = "Победил Альянс";
-        else if (typeField == "crug")
+        }else if (typeField == "crug")
            // document.getElementById("Cross").innerHTML = "Победила Орда";
        // document.getElementById("Table1").style.display = "none";
-    }
-    else if (CheckDrow())
+    } else if (CheckDrow()){
        // document.getElementById("Cross").innerHTML = "Ничья";
+    }
 }
 
 document.oncontextmenu = function () {return false;};
