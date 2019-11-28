@@ -42,11 +42,12 @@ function cellMouseDown(e) {
             break;
         case 2:
             if (turn == 2){
-                this.cellStatus =   "O";
+               // this.cellStatus =   "O";
+               // this.innerHTML = "O";
                 --turn;
             } else {
-                this.cellStatus =   "X";
-                this.innerHTML = "X";
+               // this.cellStatus =   "X";
+              //  this.innerHTML = "X";
                 ++turn; 
             }
             VictoryCheck(index1, index2, this.cellStatus);
@@ -79,9 +80,12 @@ function CheckDirection(row, cell, typeField, directionRow, directionCell) {
     let DecreasegDiagonalСheck = 1 + CheckDirection(row, cell, typeField, -1, -1) + CheckDirection(row, cell, typeField, 1, 1);
     let IncreasingDiagonalСheck = 1 + CheckDirection(row, cell, typeField, -1, 1) + CheckDirection(row, cell, typeField, 1, -1);
      if (HorizontalCheck >= VictoryСondition || VerticalСheck >= VictoryСondition || DecreasegDiagonalСheck >= VictoryСondition || IncreasingDiagonalСheck >= VictoryСondition) {
-        if (typeField == "2")
+        if (typeField == "2"){
             alert("Zero Win! ");
-        else if (typeField == "1")
+        }
+        else if (typeField == "1"){
+            alert("Сross Win! ");
+        }
        //     document.getElementById("Cross").innerHTML = "Победила Орда";
        // document.getElementById("Table1").style.display = "none";
     }
