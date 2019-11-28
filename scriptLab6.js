@@ -39,7 +39,7 @@ function cellMouseDown(e) {
                 this.cellStatus =  "O";
                 this.innerHTML = "O";
                 VictoryCheck(index1, index2, this.cellStatus);
-                }
+                
             // }
         }
             break;
