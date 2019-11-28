@@ -77,7 +77,8 @@ function VictoryCheck(row, cell, typeField) {
     let VerticalСheck = CheckDirection(row, cell, typeField, -1, 0) + CheckDirection(row, cell, typeField, 1, 0) + 1;
     let DecreasegDiagonalСheck = CheckDirection(row, cell, typeField, -1, -1) + CheckDirection(row, cell, typeField, 1, 1) + 1;
     let IncreasingDiagonalСheck = CheckDirection(row, cell, typeField, -1, 1) + CheckDirection(row, cell, typeField, 1, -1) + 1;
-     if (HorizontalCheck >= VictoryСondition || VerticalСheck >= VictoryСondition || DecreasegDiagonalСheck >= VictoryСondition || IncreasingDiagonalСheck >= VictoryСondition) {
+     if (HorizontalCheck >= VictoryСondition || VerticalСheck >= VictoryСondition || DecreasegDiagonalСheck >= VictoryСondition || IncreasingDiagonalСheck >= VictoryСondition) 
+     {
         if (typeField == "O"){
            // document.getElementById("Cross").innerHTML = "Победил Альянс";
         }else if (typeField == "X")
@@ -85,7 +86,7 @@ function VictoryCheck(row, cell, typeField) {
        // document.getElementById("Table1").style.display = "none";
    // } //else if (CheckDrow()){
        // document.getElementById("Cross").innerHTML = "Ничья";
-   // }
+     }
 }
 
 document.oncontextmenu = function () {return false;};
