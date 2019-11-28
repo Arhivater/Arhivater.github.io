@@ -38,6 +38,7 @@ function cellMouseDown(e) {
             this.cellStatus =   "O";
             this.innerHTML = "O";
             document.getElementById("X").style.display = "block";
+            document.getElementById("O").style.display = "none";
             VictoryCheck(index1, index2, this.cellStatus);
         }
             break;
@@ -59,6 +60,7 @@ function cellMouseDown(e) {
                 this.cellStatus =  "X";
                 this.innerHTML = "X";
                 document.getElementById("O").style.display = "block";
+                document.getElementById("X").style.display = "none";
                 VictoryCheck(index1, index2, this.cellStatus);
             }
             break;
