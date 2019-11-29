@@ -4,6 +4,11 @@ function loadTable(){
     let myTable = document.getElementById("iTable");
     let fild_width = document.getElementById("filed_width").value;
     let fild_hight = document.getElementById("filed_hight").value;
+    if(filed_width >= filed_hight){
+       VictoryСondition = fild_width;
+       } else {
+       VictoryСondition = fild_hight;
+       }
     let nx = fild_width;
     let ny = fild_hight;
     myTable.innerHTML = "";
