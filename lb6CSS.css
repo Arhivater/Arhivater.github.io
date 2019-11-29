@@ -1,6 +1,6 @@
 th, td{
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   text-align: center;
 }
 
@@ -8,6 +8,7 @@ table{
   width:  auto;
   height: auto;
   animation-delay: : center;
+  margin: auto;
 }
 
 .fig {
@@ -28,11 +29,11 @@ table{
 	 
  .textfeld {
     font: italic 30px "Italic",monospace;
-    border: 5px solid Black;
-    padding: 5px;
-    margin-left: 10%;
-    margin-right: 10%;
+    border: 10px solid Black;
+    padding: 20px ;
+    margin-left: 30%;
+    margin-right: 30%;
     opacity: 0.8;
-    background: #F4A460;
-    text-align: left;
+    background: #2b5569;
+    text-align: center;
 }
