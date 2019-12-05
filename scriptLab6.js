@@ -43,7 +43,7 @@ function cellMouseDown(e) {
                 //this.style.backgroundImage = "url(crest.png)";
                 this.cellStatus =  "O";
                 this.innerHTML = "O";
-                VictoryCheck(index1, index2, this.cellStatus);
+                VictoryCheck(index1, index2, this.cellStatus); // this.getAttribute("cellStatus")  // взятие свойства а в коменте взятие значения атрибута значения
                 
             // }
         }
