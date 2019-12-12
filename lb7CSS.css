@@ -19,12 +19,6 @@
   }
 }
 
-@media (max-width: 550px) {
-  .message {
-    width: 100%;
-  }
-}
-
 .header_messages {
   display: flex;
   flex-wrap: wrap;
@@ -38,3 +32,13 @@
   flex-basis: 260px;
   /* flex: 1 1 260px; */
 }
+
+@media (max-width: 520px) {
+  .massage {
+    flex-direction: row;
+  }
+  .image {
+    padding: 24px 16px 0 0;
+  }
+}
+
