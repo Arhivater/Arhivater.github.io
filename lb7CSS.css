@@ -10,4 +10,31 @@
   .head_sub-title {
     font-size: 21px;
   }
+  .message {
+    float: left;
+    width: 33%;
+    min-width: 265px;
+    padding-bottom: 24px;
+    vertical-align: top;
+  }
+}
+
+@media (max-width: 550px) {
+  .message {
+    width: 100%;
+  }
+}
+
+.header_messages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.message {
+  max-width: 360px;
+  flex-grow: 1;
+  flex_shrink: 1;
+  flex-basis: 260px;
+  /* flex: 1 1 260px; */
 }
