@@ -2,3 +2,12 @@
 .section_cintent {
   max-width: 1200px;
 }
+
+@media screen and (max-width: 400px) {
+  .header_title {
+    font-size: 36px;
+  }
+  .head_sub-title {
+    font-size: 21px;
+  }
+}
