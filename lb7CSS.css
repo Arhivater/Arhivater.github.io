@@ -53,13 +53,24 @@
          border-collapse: collapse;
          object-fit: cover;
         }
-	 
+ 
+ .Header {
+    font: italic 30px "Italic",monospace;
+    border: 5px solid Black;
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0.8;
+    background: #40533d;
+    text-align: left;
+}
+
  .body {
     font: italic 30px "Italic",monospace;
     border: 5px solid Black;
     padding: 5px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
     opacity: 0.8;
     background: #40533d;
     text-align: left;
