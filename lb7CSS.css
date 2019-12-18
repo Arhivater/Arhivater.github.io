@@ -42,3 +42,25 @@
   }
 }
 
+ body{
+	       color: #000000; /* Цвет текста */   
+         background: url(W3wallpaper.jpg) no-repeat;
+         background-position: center center; 
+         background-repeat: no-repeat;  
+         background-attachment: fixed;   
+         background-size: cover;
+         background-color: #F4A460;
+         border-collapse: collapse;
+         object-fit: cover;
+        }
+	 
+ .textfeld {
+    font: italic 30px "Italic",monospace;
+    border: 5px solid Black;
+    padding: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    opacity: 0.8;
+    background: #F4A460;
+    text-align: left;
+}
