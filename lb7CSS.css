@@ -64,3 +64,16 @@
     background: #F4A460;
     text-align: left;
 }
+
+th, td{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+table{
+  width:  auto;
+  height: auto;
+  animation-delay: : center;
+  margin: auto;
+}
