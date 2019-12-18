@@ -54,7 +54,7 @@
          object-fit: cover;
         }
 	 
- .textfeld {
+ .body {
     font: italic 30px "Italic",monospace;
     border: 5px solid Black;
     padding: 5px;
