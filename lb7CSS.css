@@ -33,16 +33,8 @@
   /* flex: 1 1 260px; */
 }
 
-@media (max-width: 520px) {
-  .massage {
-    flex-direction: row;
-  }
-  .image {
-    padding: 24px 16px 0 0;
-  }
-}
-
- body{
+@media (max-width: 1980px) {
+  body{
 	 color: #000000; /* Цвет текста */   
          background: url(W3wallpaper.jpg) no-repeat;
          background-position: center center; 
@@ -65,33 +57,202 @@
     text-align: left;
 }
 
- .body {
+ 	.body {
+    		font: italic 30px "Italic",monospace;
+    		border: 5px solid Black;
+    		padding: 5px;
+    		margin-left: 10%;
+    		margin-right: 10%;
+    		opacity: 0.8;
+    		background: #40533d;
+    		text-align: left;
+	}
+
+	th, td{
+ 		width: 40px;
+ 	 	height: 40px;
+  		text-align: center;
+	}
+
+	.zg {
+		background: #1581e2;
+		color: #fafafa;
+		text-align: center;
+	}
+
+	table{
+  		width:  auto;
+ 		height: auto;
+  		animation-delay: : center;
+  		margin: auto;
+  		border: 6;
+	}
+}
+
+@media (max-width: 1600px) {
+  body{
+	 color: #000000; /* Цвет текста */   
+         background: url(W3wallpaper.jpg) no-repeat;
+         background-position: center center; 
+         background-repeat: no-repeat;  
+         background-attachment: fixed;   
+         background-size: cover;
+         background-color: #F4A460;
+         border-collapse: collapse;
+         object-fit: cover;
+        }
+ 
+ .Header {
     font: italic 30px "Italic",monospace;
     border: 5px solid Black;
     padding: 5px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     opacity: 0.8;
     background: #40533d;
     text-align: left;
 }
 
-th, td{
-  width: 40px;
-  height: 40px;
-  text-align: center;
+ 	.body {
+    		font: italic 30px "Italic",monospace;
+    		border: 5px solid Black;
+    		padding: 5px;
+    		margin-left: 10%;
+    		margin-right: 10%;
+    		opacity: 0.8;
+    		background: #40533d;
+    		text-align: left;
+	}
+
+	th, td{
+ 		width: 40px;
+ 	 	height: 40px;
+  		text-align: center;
+	}
+
+	.zg {
+		background: #1581e2;
+		color: #fafafa;
+		text-align: center;
+	}
+
+	table{
+  		width:  auto;
+ 		height: auto;
+  		animation-delay: : center;
+  		margin: auto;
+  		border: 6;
+	}
 }
 
-.zg {
-background: #1581e2;
-color: #fafafa;
-text-align: center;
+@media (max-width: 1100px) {
+  body{
+	 color: #000000; /* Цвет текста */   
+         background: url(W3wallpaper.jpg) no-repeat;
+         background-position: center center; 
+         background-repeat: no-repeat;  
+         background-attachment: fixed;   
+         background-size: cover;
+         background-color: #F4A460;
+         border-collapse: collapse;
+         object-fit: cover;
+        }
+ 
+ .Header {
+    font: italic 30px "Italic",monospace;
+    border: 5px solid Black;
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0.8;
+    background: #40533d;
+    text-align: left;
 }
 
-table{
-  width:  auto;
-  height: auto;
-  animation-delay: : center;
-  margin: auto;
-  border: 6;
+ 	.body {
+    		font: italic 30px "Italic",monospace;
+    		border: 5px solid Black;
+    		padding: 5px;
+    		margin-left: 10%;
+    		margin-right: 10%;
+    		opacity: 0.8;
+    		background: #40533d;
+    		text-align: left;
+	}
+
+	th, td{
+ 		width: 40px;
+ 	 	height: 40px;
+  		text-align: center;
+	}
+
+	.zg {
+		background: #1581e2;
+		color: #fafafa;
+		text-align: center;
+	}
+
+	table{
+  		width:  auto;
+ 		height: auto;
+  		animation-delay: : center;
+  		margin: auto;
+  		border: 6;
+	}
+}
+
+@media (max-width: 400px) {
+  body{
+	 color: #000000; /* Цвет текста */   
+         background: url(W3wallpaper.jpg) no-repeat;
+         background-position: center center; 
+         background-repeat: no-repeat;  
+         background-attachment: fixed;   
+         background-size: cover;
+         background-color: #F4A460;
+         border-collapse: collapse;
+         object-fit: cover;
+        }
+ 
+ .Header {
+    font: italic 30px "Italic",monospace;
+    border: 5px solid Black;
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0.8;
+    background: #40533d;
+    text-align: left;
+}
+
+ 	.body {
+    		font: italic 30px "Italic",monospace;
+    		border: 5px solid Black;
+    		padding: 5px;
+    		margin-left: 10%;
+    		margin-right: 10%;
+    		opacity: 0.8;
+    		background: #40533d;
+    		text-align: left;
+	}
+
+	th, td{
+ 		width: 40px;
+ 	 	height: 40px;
+  		text-align: center;
+	}
+
+	.zg {
+		background: #1581e2;
+		color: #fafafa;
+		text-align: center;
+	}
+
+	table{
+  		width:  auto;
+ 		height: auto;
+  		animation-delay: : center;
+  		margin: auto;
+  		border: 6;
+	}
 }
