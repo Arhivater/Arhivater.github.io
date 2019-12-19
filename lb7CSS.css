@@ -1,4 +1,3 @@
-@media (max-width: 1980px) {
   body{
 	 color: #000000; /* Цвет текста */   
          background: url(W3wallpaper.jpg) no-repeat;
@@ -17,7 +16,19 @@
  .img2 {
     width: 500px;
  }
-
+ .textbox{
+	 color: white;
+	 display:flex;
+	 flex-direction: column;
+	 min-width: 385px;
+	 border: 5px solid Black;
+     padding: 5px;
+     opacity: 0.8;
+     background: #40533d;
+ }
+body{
+	margin: 0;
+}
  .Text1{
     color: #ffffff;
     text-align: left;
@@ -36,24 +47,40 @@
     margin-right: 5%;
     opacity: 0.8;
     background: #40533d;
-    text-align: left;
+    text-align: center;
 }
 
  	.content {
+		display: flex;
+		max-width: 700px;
+		float: left;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
     		font: italic 150px "Italic",monospace;
     		border: 5px solid Black;
     		padding: 5px;
-    		margin-left: 10%;
-    		margin-right: 10%;
     		opacity: 0.8;
     		background: #40533d;
-    		text-align: left;
 	}
 
 	th, td{
+		font-size: 50px;
  		width: 40px;
  	 	height: 40px;
-  		text-align: center;
+  		
+	}
+	h1{
+		border-bottom-color: #00ff40;
+	}
+	tr{
+		display: flex;
+	}
+	td:nth-child(1){
+		flex: 70%;
+	}
+	td:nth-child(2){
+		flex: 30%;
 	}
 
 	.zg {
@@ -63,178 +90,22 @@
 	}
 
 	table{
-  		width:  auto;
+		width: 100%;
  		height: auto;
   		animation-delay: : center;
   		margin: auto;
   		border: 6;
 	}
-}
-
-@media (max-width: 1600px) {
-  body{
-	 color: #000000; /* Цвет текста */   
-         background: url(W3wallpaper.jpg) no-repeat;
-         background-position: center center; 
-         background-repeat: no-repeat;  
-         background-attachment: fixed;   
-         background-size: cover;
-         background-color: #F4A460;
-         border-collapse: collapse;
-         object-fit: cover;
-        }
- 
- .Header {
-    font: italic 150px "Italic",monospace;
-    border: 5px solid Black;
-    padding: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
-    opacity: 0.8;
-    background: #40533d;
-    text-align: left;
-}
-
- 	.content {
-    		font: italic 150px "Italic",monospace;
-    		border: 5px solid Black;
-    		padding: 5px;
-    		margin-left: 10%;
-    		margin-right: 10%;
-    		opacity: 0.8;
-    		background: #40533d;
-    		text-align: left;
+	@media(max-width: 1700px){
+		.TextHeader {
+		font-size: 100px;
 	}
-
-	th, td{
- 		width: 40px;
- 	 	height: 40px;
-  		text-align: center;
+		@media(max-width: 1057px){
+		.TextHeader {
+		font-size: 50px;
 	}
-
-	.zg {
-		background: #1581e2;
-		color: #fafafa;
-		text-align: center;
+	.content{
+		max-width: none;
+		width: 97%;
 	}
-
-	table{
-  		width:  auto;
- 		height: auto;
-  		animation-delay: : center;
-  		margin: auto;
-  		border: 6;
 	}
-}
-
-@media (max-width: 900px) {
-  body{
-	 color: #000000; /* Цвет текста */   
-         background: url(W3wallpaper.jpg) no-repeat;
-         background-position: center center; 
-         background-repeat: no-repeat;  
-         background-attachment: fixed;   
-         background-size: cover;
-         background-color: #F4A460;
-         border-collapse: collapse;
-         object-fit: cover;
-        }
- 
- .Header {
-    font: italic 150px "Italic",monospace;
-    border: 5px solid Black;
-    padding: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
-    opacity: 0.8;
-    background: #40533d;
-    text-align: left;
-}
-
- 	.content {
-    		font: italic 150px "Italic",monospace;
-    		border: 5px solid Black;
-    		padding: 5px;
-    		margin-left: 10%;
-    		margin-right: 10%;
-    		opacity: 0.8;
-    		background: #40533d;
-    		text-align: left;
-	}
-
-	th, td{
- 		width: 40px;
- 	 	height: 40px;
-  		text-align: center;
-	}
-
-	.zg {
-		background: #1581e2;
-		color: #fafafa;
-		text-align: center;
-	}
-
-	table{
-  		width:  auto;
- 		height: auto;
-  		animation-delay: : center;
-  		margin: auto;
-  		border: 6;
-	}
-}
-
-@media (max-width: 400px) {
-  body{
-	 color: #000000; /* Цвет текста */   
-         background: url(W3wallpaper.jpg) no-repeat;
-         background-position: center center; 
-         background-repeat: no-repeat;  
-         background-attachment: fixed;   
-         background-size: cover;
-         background-color: #F4A460;
-         border-collapse: collapse;
-         object-fit: cover;
-        }
- 
- .Header {
-    font: italic 150px "Italic",monospace;
-    border: 5px solid Black;
-    padding: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
-    opacity: 0.8;
-    background: #40533d;
-    text-align: left;
-}
-
- 	.content {
-    		font: italic 150px "Italic",monospace;
-    		border: 5px solid Black;
-    		padding: 5px;
-    		margin-left: 10%;
-    		margin-right: 10%;
-    		opacity: 0.8;
-    		background: #40533d;
-    		text-align: left;
-	}
-
-	th, td{
- 		width: 40px;
- 	 	height: 40px;
-  		text-align: center;
-	}
-
-	.zg {
-		background: #1581e2;
-		color: #fafafa;
-		text-align: center;
-	}
-
-	table{
-  		width:  auto;
- 		height: auto;
-  		animation-delay: : center;
-  		margin: auto;
-  		border: 6;
-	}
-}
