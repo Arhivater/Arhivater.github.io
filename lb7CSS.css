@@ -1,38 +1,3 @@
-
-.section_cintent {
-  max-width: 1200px;
-}
-
-@media screen and (max-width: 400px) {
-  .header_title {
-    font-size: 36px;
-  }
-  .head_sub-title {
-    font-size: 21px;
-  }
-  .message {
-    float: left;
-    width: 33%;
-    min-width: 265px;
-    padding-bottom: 24px;
-    vertical-align: top;
-  }
-}
-
-.header_messages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.message {
-  max-width: 360px;
-  flex-grow: 1;
-  flex_shrink: 1;
-  flex-basis: 260px;
-  /* flex: 1 1 260px; */
-}
-
 @media (max-width: 1980px) {
   body{
 	 color: #000000; /* Цвет текста */   
@@ -47,7 +12,7 @@
         }
  
  .Header {
-    font: italic 30px "Italic",monospace;
+    font: italic 150px "Italic",monospace;
     border: 5px solid Black;
     padding: 5px;
     margin-left: 5%;
@@ -57,8 +22,8 @@
     text-align: left;
 }
 
- 	.body {
-    		font: italic 30px "Italic",monospace;
+ 	.content {
+    		font: italic 150px "Italic",monospace;
     		border: 5px solid Black;
     		padding: 5px;
     		margin-left: 10%;
@@ -103,7 +68,7 @@
         }
  
  .Header {
-    font: italic 30px "Italic",monospace;
+    font: italic 150px "Italic",monospace;
     border: 5px solid Black;
     padding: 5px;
     margin-left: 5%;
@@ -113,8 +78,8 @@
     text-align: left;
 }
 
- 	.body {
-    		font: italic 30px "Italic",monospace;
+ 	.content {
+    		font: italic 150px "Italic",monospace;
     		border: 5px solid Black;
     		padding: 5px;
     		margin-left: 10%;
@@ -145,7 +110,7 @@
 	}
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   body{
 	 color: #000000; /* Цвет текста */   
          background: url(W3wallpaper.jpg) no-repeat;
@@ -159,7 +124,7 @@
         }
  
  .Header {
-    font: italic 30px "Italic",monospace;
+    font: italic 150px "Italic",monospace;
     border: 5px solid Black;
     padding: 5px;
     margin-left: 5%;
@@ -169,8 +134,8 @@
     text-align: left;
 }
 
- 	.body {
-    		font: italic 30px "Italic",monospace;
+ 	.content {
+    		font: italic 150px "Italic",monospace;
     		border: 5px solid Black;
     		padding: 5px;
     		margin-left: 10%;
@@ -215,7 +180,7 @@
         }
  
  .Header {
-    font: italic 30px "Italic",monospace;
+    font: italic 150px "Italic",monospace;
     border: 5px solid Black;
     padding: 5px;
     margin-left: 5%;
@@ -225,8 +190,8 @@
     text-align: left;
 }
 
- 	.body {
-    		font: italic 30px "Italic",monospace;
+ 	.content {
+    		font: italic 150px "Italic",monospace;
     		border: 5px solid Black;
     		padding: 5px;
     		margin-left: 10%;
