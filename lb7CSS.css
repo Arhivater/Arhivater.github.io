@@ -10,10 +10,27 @@
          border-collapse: collapse;
          object-fit: cover;
         }
- 
+ .img1 {
+    width: 250px;
+ }
+        
+ .img2 {
+    width: 500px;
+ }
+
+ .Text1{
+    color: #ffffff;
+    text-align: left;
+ }
+
+ .Text2{
+ 	color: #15ec0e;
+ 	text-align:right;
+ }
+
  .Header {
     font: italic 150px "Italic",monospace;
-    border: 5px solid Black;
+    border: 10px solid Black;
     padding: 5px;
     margin-left: 5%;
     margin-right: 5%;
@@ -40,8 +57,8 @@
 	}
 
 	.zg {
-		background: #1581e2;
-		color: #fafafa;
+		background: #2a46d0a8;
+		color: #ffffff;
 		text-align: center;
 	}
 
