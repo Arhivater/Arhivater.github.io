@@ -135,7 +135,7 @@ body{
  	.content {
 		display: flex;
 		flex: 25%;
-		max-width: 700px;
+		flex: war;
 		min-width: 480px;
 		float: left;
 		flex-direction: column;
@@ -227,8 +227,13 @@ th {
 		.sidebar{
 			display: none;
 		}
-		 .textbox{
+		.content{
+			.textbox{
 			 margin-right: auto;
+		 
+		}
+		 .textbox{
+			 margin-right: 0px;
 		 }
 		 .HeaderMenu {
 				display: block;
@@ -348,5 +353,3 @@ th {
 		flex-direction: wrap;
 		font-size: 120px;
 	}
-	
-	
