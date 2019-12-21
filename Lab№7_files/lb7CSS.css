@@ -344,6 +344,9 @@ th {
 	h3{
 		font-size: 70px;
 	}
+	.textbox{
+		margin-right: 0px;
+	}
 		}
 				@media(max-width: 1000px){
 	
@@ -379,6 +382,10 @@ th {
 	margin-left: 15px;
 	font-size: 60px;
 	letter-spacing: 1.5px;
+	}
+	.textbox{
+	 max-width: none;
+	 margin-right: 0px;
 	}
 	.liMenu {
 	 font: italic 65px "Times New Roman", Times, serif;
