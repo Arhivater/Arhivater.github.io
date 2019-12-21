@@ -64,7 +64,7 @@ h3 {
  
   .img4 {
 	width: 20px;
-	heightL 22px;
+	height: 22px;
 	white-space: nowrap;
  }
 
@@ -368,4 +368,10 @@ th {
 		font-size: 49px;
 		letter-spacing: 1px;
 	}
+ .img4 {
+	width: 20px;
+	height: 22px;
+	white-space: nowrap;
+	 letter-spacing: 1px;
+ }
 }
