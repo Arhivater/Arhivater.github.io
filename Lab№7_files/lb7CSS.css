@@ -93,6 +93,7 @@ input {
 	 font-size: 36px;
     margin-right: 365px;
     weight: auto;
+	min-width: 500px;
  }
 body{
 	margin: 0;
@@ -275,8 +276,11 @@ th {
 	}
 	.content{
 		max-width: none;
+		min-width: 700px;
+		flex-direction: wrap;
 		width: 97%;
 		font-size: 100px;
+		flex-flow: row wrap;
 	}
 	.HeaderMenu{
 		display: block;
@@ -334,13 +338,4 @@ th {
 	}
 	h3{
 		font-size: 70px;
-	}
-	
-	@media(max-width: 1057px){
-		.TextHeader {
-		font-size: 80px;
-	}
-	.content{
-		max-width: none;
-		width: 97%;
 	}
