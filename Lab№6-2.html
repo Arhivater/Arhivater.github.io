@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Lab№6-2</title>
+    <link rel="stylesheet" href="./Lab№6-2_files/style.css">
+    <style>
+        tr:nth-child(even) {
+            background: #4a4a4a;
+        }
+
+        .wall {
+            background: #3C8015;
+        }
+
+        .player {
+            background: #5612DC;
+        }
+
+        .win {
+            background: #4BD6FF;
+        }
+
+        .empty {
+            background: #B0F986;
+        }
+    </style>
+	<script src="./Lab№6-2_files/cookiework.js.Без названия"></script>
+    <script>
+        var tabarr;
+        var flag = 1;
+        var h;
+        var w;
+        var s = -1;
+        var str = "1111111111100000000110111113311010011111101000000110101111011010000101101011110110001200011111111111";
+        var xpos;
+        var ypos;
+        var winxpos;
+        var winypos;
+        var win = false;
+
+        function build() {
+            var tab = document.getElementById("tabl");
+            h = 10;
+            w = 10;
+			s=-1;
+            tab.innerHTML = "";
+            tabarr = new Array(h);
+            for (let i = 0; i < h; i++) {
+                tabarr[i] = new Array(w);
+                let newline = document.createElement("tr");
+                for (let j = 0; j < w; j++) {
+                    let newcell = document.createElement("td");
+                    let siz = document.documentElement.clientHeight / w;
+                    newcell.width = siz;
+                    newcell.height = siz;
+                    switch (str[++s]) {
+                        case '1':
+                            newcell.className = "wall";
+                            break;
+                        case '2':
+                            newcell.className = "player";
+                            xpos = j;
+                            ypos = i;						
+                            break;
+                        case '3':
+                            newcell.className = "win";
+                            winxpos = j;
+                            winypos = i;
+                            break;
+                        default:
+                            newcell.className = "empty";
+                            break;
+                    }
+                    tabarr[i][j] = newcell;
+                    newline.appendChild(newcell);
+                }
+                tab.appendChild(newline);
+            }
+						if(getCookie("Cxpos")!=""){
+						xpos=parseInt(getCookie("Cxpos"));
+						ypos=parseInt(getCookie("Cypos"));
+						tabarr[8][1].className="empty";
+						tabarr[ypos][xpos].className="player";
+						}
+
+        }
+
+
+        window.onload = function () {
+            build();
+            addEventListener("keydown", move);
+
+            function move(e) {
+                if (win) return;
+                switch (e.key) {
+                    case "w":
+                    case "ц":
+                        if (tabarr[ypos - 1][xpos].className != "wall") {
+                            tabarr[ypos - 1][xpos].className = "player";
+                            tabarr[ypos][xpos].className = "empty";
+                            ypos--;
+                        }
+                        break;
+                    case "a":
+                    case "ф":
+                        if (tabarr[ypos][xpos - 1].className != "wall") {
+                            tabarr[ypos][xpos - 1].className = "player";
+                            tabarr[ypos][xpos].className = "empty";
+                            xpos--;
+                        }
+                        break;
+                    case "d":
+                    case "в":
+                        if (tabarr[ypos][xpos + 1].className != "wall") {
+                            tabarr[ypos][xpos + 1].className = "player";
+                            tabarr[ypos][xpos].className = "empty";
+                            xpos++;
+                        }
+                        break;
+                    case "s":
+                    case "ы":
+                        if (tabarr[(ypos + 1)][xpos].className != "wall") {
+                            tabarr[ypos + 1][xpos].className = "player";
+                            tabarr[ypos][xpos].className = "empty";
+                            ypos++;
+                        }
+                        break;
+                }
+                if ((xpos == winxpos) && (ypos == winypos)) win = true;
+                if (win) {  win=false;
+				setCookie("Cxpos",1,2);
+				setCookie("Cypos",8,2);
+				alert("You win!");
+				build();
+				return;
+				}
+				setCookie("Cxpos",xpos,2);
+				setCookie("Cypos",ypos,2);
+            }
+        }
+    </script>
+	<style>
+	body{
+	 color: #000000; /* Цвет текста */   
+         background: url(./Lab№6-2_files/awd.jpg) no-repeat;
+         background-position: center center; 
+         background-repeat: no-repeat;  
+         background-attachment: fixed;   
+         background-size: cover;
+         background-color: #F4A460;
+         border-collapse: collapse;
+         object-fit: cover;
+        }
+	</style>
+</head>
+<body>
+<table id="tabl"><tr><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="win"></td><td width="96.9" height="96.9" class="wall"></td></tr><tr><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td></tr><tr><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td></tr><tr><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td></tr><tr><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td></tr><tr><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td></tr><tr><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td></tr><tr><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td></tr><tr><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="player"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="empty"></td><td width="96.9" height="96.9" class="wall"></td></tr><tr><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td><td width="96.9" height="96.9" class="wall"></td></tr></table>
+
+</body></html>
