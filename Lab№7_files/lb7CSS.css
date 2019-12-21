@@ -276,9 +276,7 @@ th {
 	}
 	.content{
 		max-width: none;
-		min-width: 700px;
 		flex-direction: wrap;
-		width: 97%;
 		font-size: 100px;
 		flex-flow: row wrap;
 	}
@@ -339,3 +337,16 @@ th {
 	h3{
 		font-size: 70px;
 	}
+		}
+				@media(max-width: 1000px){
+	
+		.TextHeader {
+		font-size: 150px;
+	}
+	.content{
+		max-width: none;
+		flex-direction: wrap;
+		font-size: 120px;
+	}
+	
+	
