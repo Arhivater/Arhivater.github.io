@@ -34,8 +34,10 @@
         var str = "1111111111100000000110111113311010011111101000000110101111011010000101101011110110001200011111111111";
         var xpos;
         var ypos;
-        var winxpos;
-        var winypos;
+        var winxpos1;
+        var winypos1;
+	var winxpos2;
+        var winypos2;
         var win = false;
 
         function build() {
@@ -64,8 +66,10 @@
                             break;
                         case '3':
                             newcell.className = "win";
-                            winxpos = j;
-                            winypos = i;
+                            winxpos1 = j;
+                            winypos1 = i;
+			    winxpos2 = j-1;
+                            winypos2 = i;
                             break;
                         default:
                             newcell.className = "empty";
@@ -126,7 +130,7 @@
                         }
                         break;
                 }
-                if ((xpos == winxpos) && (ypos == winypos)) win = true;
+                if ((xpos == winxpos1) && (ypos == winypos1) && (xpos == winxpos2) && (ypos == winypos2)) win = true;
                 if (win) {  win=false;
 				setCookie("Cxpos",5,2);
 				setCookie("Cypos",8,2);
