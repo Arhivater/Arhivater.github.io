@@ -130,7 +130,7 @@
                         }
                         break;
                 }
-                if ((xpos == winxpos1) && (ypos == winypos1) && (xpos == winxpos2) && (ypos == winypos2)) win = true;
+                if (((xpos == winxpos1) && (ypos == winypos1)) || ((xpos == winxpos2) && (ypos == winypos2))) win = true;
                 if (win) {  win=false;
 				setCookie("Cxpos",5,2);
 				setCookie("Cypos",8,2);
