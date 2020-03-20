@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Museum</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 921px }
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    .Welcome {
+	text-align: center;
+	}
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+	
+	.header_h3 {
+		color: #46b823;
+		text-align: center;
+		font-size: 40px;
+	}
+	.glyphicon glyphicon-log-in {
+    height: 10px;
+	}
+  </style>
+  <script>
+function showHint(str) {
+if (str.length == 0) {
+document.getElementById("txtHint").innerHTML = "";
+return;
+} else {
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById("txtHint").innerHTML = this.responseText;
+}
+};
+xmlhttp.open("POST", "http://localhost:8888", true);
+xmlhttp.send(document.getElementById("POSTparam").value);
+}
+}
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="Logo_Museum.png" height=80px width=80px class="navbar-brand">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <p class="header_h3">Museum</p>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+	  <p><a href="#">Музеи</a></p>
+      <p><a href="#">Картины</a></p>
+      <p><a href="#">Художники</a></p>
+      <p><a href="#">Выставки</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1 class="Welcome">Добро пожаловать на сайт</h1>
+      <p>awwwwwwwwwwwwwwwwwwwwwwwwwwdddddddddddddd awddddddddddddddddddd ljsrhuigbioqwbnuo[dr[ kfnopijase[ifpuhawpejfhuheu nfoiheowhfopjioawehfdhpi iqwhjdoiawhpdjpejaigf[aqwpidfiewjfop jioekfiopjeijfpjj;a,.f;,.rt, pyjklyktijugsygdw g hwehdgieuhfi gjj q hughqkjwdiuhiuweghfo ouqwouhouhosdhfohaws.</p>
+      <hr>
+      <h3>ТУТ вроде как будет написано Музеи или что-то другое из списка справа, но это не точно</h3>
+      <p>А тут да, что типо картины, вероятно, да</p>
+	  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Leonardo_da_Vinci_-_Portrait_of_a_Musician.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <div class="media">
+    <div class="media-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Leonardo_self.jpg/150px-Leonardo_self.jpg" class="media-object" style="width:45px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">«Портрет музыканта»<small><i> Дата написания 1490-2</i></small></h4>
+      <p>Автор: Леона́рдо ди сер Пье́ро да Ви́нчи, Авторство Леонардо да Винчи оспаривается редко, хотя и существует предположение, что автором портрета является не Леонардо, а Антонелло да Мессина.</p>
+      </div>
+     </div>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://sun9-58.userapi.com/c845416/v845416689/826f4/8R0ZQXbkNXQ.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-2 sidenav" >
+      <div class="well" style=" height: 140px;">
+        <p>Тут будет информация о сайте</p>
+		<input type="text" id="POSTparam" value="">
+		<ul class="nav navbar-nav navbar-right"  style="
+    border-right-width: 20px;padding-right: 50px;"><a href="#">
+			</a><li><a href="#"><input type="button" onclick="showHint(this.value)" value="Login"></li></a></li>
+		</ul>
+      </div>
+      <div class="well">
+        <span id="txtHint"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Узрите подвал, да, только не ищите тут соленья, тут будет реклама </p>
+</footer>
+
+</body>
+</html>
