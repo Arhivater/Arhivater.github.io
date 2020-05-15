@@ -14,14 +14,20 @@ let Paintig_description = ["Авторство Леонардо да Винчи 
 
 var Main_section = document.getElementById('Main_section');						
 for(let i = 1; i <= 4 ; i++) {
-	Main_section.insertAdjacentHTML("beforeend", "<div id='Paintings_section"+'_'+i+"' class='w3-row-padding w3-section'>");		
+	var section = document.createElement("div");
+    section.classList.add("w3-row-padding");
+    section.classList.add("w3-section");
+    section.id=("Paintingssection"+i);
+    Main_section.appendChild(section);	
 }
+
 for(let j = 1; j <= 4 ; j++) {
 	var P_section = document.getElementById("Paintings_section"+'_'+j);
 	for(let i = 1; i <= 3 ; i++) {
 		P_section.insertAdjacentHTML("beforeend", "<div id='Painting"+'_'+j+'_'+i+"' class='w3-third w3-container w3-margin-bottom'>");		
 	}
 }
+
 var temp = 0;
 for(let j = 1; j <= 4 ; j++) {
 	for(let i = 1; i <= 3 ; i++) {
