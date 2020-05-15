@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Museum</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 921px }
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    .Welcome {
-	text-align: center;
-	}
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
+    <head>
+        <title>Museum</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+        .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        }
+        
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {height: 921px }
+        
+        /* Set gray background color and 100% height */
+        .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+        }
+        .Welcome {
+        text-align: center;
+        }
+        /* Set black background color, white text and some padding */
+        footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
+    .sidenav {
+    height: auto;
+    padding: 15px;
+    }
+    .row.content {height:auto;} 
     }
 	
 	.img_Paintings{
-		width: 444px;
-		height: 375px;
+    width: 444px;
+    height: 375px;
 	}
 	
 	.header_h3 {
-		color: #46b823;
-		text-align: center;
-		font-size: 30px;
+    color: #46b823;
+    text-align: center;
+    font-size: 30px;
 	}
 	
 	.Museum_h3 {
-		color: #46b823;
-		text-align: center;
-		font-size: 40px;
+    color: #46b823;
+    text-align: center;
+    font-size: 40px;
 	}
 	
 	.glyphicon glyphicon-log-in {
@@ -72,19 +72,19 @@
 	}
 	
 	.buttons_header{
-		text-align: center;
+    text-align: center;
 	}
 	
 	.fig {
-      text-align: center;
-   }
-   
-   .Author {
-   width: 45px;
-   height: 70px;
-   }
-   
-   .Background_Start {
+    text-align: center;
+    }
+    
+    .Author {
+    width: 45px;
+    height: 70px;
+    }
+    
+    .Background_Start {
 	color: #000000;
     font: italic 30px "Italic",monospace;
     border: 5px solid Black;
@@ -92,9 +92,9 @@
     opacity: 0.8;
     background: #33ccff;
     text-align: left;
-}
-
-.Title  {
+    }
+    
+    .Title  {
     font: italic 30px "Italic",monospace;
     border: 5px solid Black;
     padding: 5px;
@@ -103,9 +103,9 @@
     opacity: 0.8;
     background: #33ccff;
     text-align: left;
-}
-
-.Title_text { 
+    }
+    
+    .Title_text { 
 	text-shadow: 1px 1px 2px black, 0 0 1em red; 
     color: black; 
     font-size: 2em; /* Размер надписи */
@@ -116,38 +116,38 @@
     background-color: #33ccff; /* Цвет линии */
     color: #33ccff; /* Цвет линии для IE6-7 */
     height: 5px; /* Толщина линии */
-   }
+    }
 	
-  </style>
-  <script>
-function showHint(str) {
-if (str.length == 0) {
-document.getElementById("txtHint").innerHTML = "";
-return;
-} else {
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-if (this.readyState == 4 && this.status == 200) {
-document.getElementById("txtHint").innerHTML = this.responseText;
-}
-};
-xmlhttp.open("POST", "http://localhost:8888", true);
-xmlhttp.send(document.getElementById("POSTparam").value);
-}
-}
-
-</script>
-</head>
-<body style="background: url(Background_1.png) no-repeat; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-color: #F4A460; border-collapse: collapse; object-fit: cover;">
-
-<nav class="navbar navbar-inverse" style="border-top-width: 15px; border-bottom-width: 15px;">
-  <div class="container-fluid">
+    </style>
+    <script>
+    function showHint(str) {
+    if (str.length == 0) {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+    } else {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+    };
+    xmlhttp.open("POST", "http://localhost:8888", true);
+    xmlhttp.send(document.getElementById("POSTparam").value);
+    }
+    }
+    
+    </script>
+    </head>
+    <body style="background: url(Background_1.png) no-repeat; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-color: #F4A460; border-collapse: collapse; object-fit: cover;">
+    
+    <nav class="navbar navbar-inverse" style="border-top-width: 15px; border-bottom-width: 15px;">
+    <div class="container-fluid">
     <div class="navbar-header">
-     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>                        
+    </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
 	<div class="buttons_header">
@@ -155,46 +155,46 @@ xmlhttp.send(document.getElementById("POSTparam").value);
 	<button type="button" href="#Paintings" class="btn btn-success" style="width: 100px;height: 34px; margin-left: 10px; margin-right: 10px;">Картины</button>
 	<button type="button" href="#Painters" class="btn btn-success" style="width: 100px;height: 34px; margin-left: 10px; margin-right: 10px;">Художники</button>
 	<button type="button" href="#Exhibitions" class="btn btn-success" style="width: 100px;height: 34px; margin-left: 10px; margin-right: 10px;">Выставки</button>
-  </div>
-  </div>
-</nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
+    </div>
+    </div>
+    </nav>
+    
+    <div class="container-fluid text-center">    
+    <div class="row content">
     <div class="col-sm-1 sidenav">
 	<p class="text-align: center;">
-		<img src="Logo_Museum.png" style="height: 130px; width: 130px;">
+    <img src="Logo_Museum.png" style="height: 130px; width: 130px;">
 	</p>
-	 <p>
-		<h3 class="header_h3">Museum</h3>
-	 </p>
-	 <hr>
-	 
-	 <p class="text-align: center;"><img src="Advertising.png" alt="Здесь могла быть ваша реклама..."></p>	 
-	 
-	 <p class="text-align: center;"><img src="Advertising.png" lt="Здесь могла быть ваша реклама..."></p>	 
-	 
-	 <p class="text-align: center;"><img src="Advertising.png" lt="Здесь могла быть ваша реклама..."></p>	 
-	 
-	 <p class="text-align: center;"><img src="Advertising.png" lt="Здесь могла быть ваша реклама..."></p>	 
-	 
-	 
-	 
-	 
-	 
+    <p>
+    <h3 class="header_h3">Museum</h3>
+    </p>
+    <hr>
+    
+    <p class="text-align: center;"><img src="Advertising.png" alt="Здесь могла быть ваша реклама..."></p>	 
+    
+    <p class="text-align: center;"><img src="Advertising.png" lt="Здесь могла быть ваша реклама..."></p>	 
+    
+    <p class="text-align: center;"><img src="Advertising.png" lt="Здесь могла быть ваша реклама..."></p>	 
+    
+    <p class="text-align: center;"><img src="Advertising.png" lt="Здесь могла быть ваша реклама..."></p>	 
+    
+    
+    
+    
+    
     </div>
 	
     <div class="col-sm-9 text-left"> 
 	<div class="Background_Start">
-      <h1 class="Welcome">Добро пожаловать в Museum</h1>
-      <h3>Перед вами «Museum», здесь вы можете посмотреть на картины художников всего мира, которые содержаться в наших музеях и прочесть об авторах этих картин, а также вы можете узнать дату выставок, которые будут проходить в наших музеях чтобы лицезреть произведения авторов в живую.</h3>
+    <h1 class="Welcome">Добро пожаловать в Museum</h1>
+    <h3>Перед вами «Museum», здесь вы можете посмотреть на картины художников всего мира, которые содержаться в наших музеях и прочесть об авторах этих картин, а также вы можете узнать дату выставок, которые будут проходить в наших музеях чтобы лицезреть произведения авторов в живую.</h3>
     </div>
-	  <hr>
-	  
-	  <div class="Title">
-		<p class="fig" style="color: #0CFF00"><b class="Title_text">Картины</b>
-	  </div>
-	  
+    <hr>
+    
+    <div class="Title">
+    <p class="fig" style="color: #0CFF00"><b class="Title_text">Картины</b>
+    </div>
+    
 	
 	
 	<div id="Main_section" class="w3-row-padding">
@@ -205,24 +205,24 @@ xmlhttp.send(document.getElementById("POSTparam").value);
 	
 	
     <div class="col-sm-2 sidenav" style="height: 280px; top: 20px; right: 20px; left: 10px; width: 290px;">
-      <div class="well" style=" height: 240px;">
-        <p>Логин</p>
-		<input type="text" id="POSTparam" value="" style="width: 149px;">
-		 <p><br>Пароль</p>
-		<input type="text" id="POSTparam" value="" style="width: 149px;">
-		<p class="fig" style="padding-top: 10px;">
-			<button type="button"  onclick="showHint(this.value)" class="btn btn-success">Success</button>
-		</p>
-      </div>
+    <div class="well" style=" height: 240px;">
+    <p>Логин</p>
+    <input type="text" id="POSTparam" value="" style="width: 149px;">
+    <p><br>Пароль</p>
+    <input type="text" id="POSTparam" value="" style="width: 149px;">
+    <p class="fig" style="padding-top: 10px;">
+    <button type="button"  onclick="showHint(this.value)" class="btn btn-success">Success</button>
+    </p>
+    </div>
     
     </div>
-  </div>
-</div>
-
-<footer style="text-align: right;" class="container-fluid text-center">
-  <p>Контактная информация</p>
-</footer>
-
-<script src="Project_Museum_JS.js"></script>
-</body>
-</html>
+    </div>
+    </div>
+    
+    <footer style="text-align: right;" class="container-fluid text-center">
+    <p>Контактная информация</p>
+    </footer>
+    
+    <script src="Project_Museum_JS.js"></script>
+    </body>
+    </html>    
