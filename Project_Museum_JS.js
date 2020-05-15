@@ -2,7 +2,18 @@ let Paintings_img = ["https://upload.wikimedia.org/wikipedia/commons/8/83/Leonar
 
 let Authors_img = ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Leonardo_self.jpg/150px-Leonardo_self.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Leonardo_self.jpg/150px-Leonardo_self.jpg","https://upload.wikimedia.org/wikipedia/commons/1/1f/Thomas_Cole.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/VincentVanGoghFoto.jpg/150px-VincentVanGoghFoto.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Edvard_Munch_1912.jpg/200px-Edvard_Munch_1912.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg/518px-Miguel_%C3%81ngel%2C_por_Daniele_da_Volterra_%28detalle%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ivan_Shishkin_restoration.jpg/250px-Ivan_Shishkin_restoration.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Aivazovsky_-_Self-portrait_1874.jpg/546px-Aivazovsky_-_Self-portrait_1874.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Brjullov.jpg/512px-Brjullov.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Vasili_Vereshchagin.jpg/432px-Vasili_Vereshchagin.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/John_William_Waterhouse_001.jpg/376px-John_William_Waterhouse_001.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Brjullov.jpg/512px-Brjullov.jpg"];
 
-let Paintings_name = ["«Портрет музыканта»","«Портре́т госпожи́ Ли́зы дель Джоко́ндо»","«Крушение»","«Звёздная Ночь»","«Крик»","«Сотворение Адама»","«Утро в сосновом лесу»","«Девятый вал»","«После́дний день Помпе́и»","«Апофеоз войны»","«Прекрасная Розамунда»","«Ледяные горы»"];
+let Paintings_name = [	"«Портрет музыканта»",
+						"«Портре́т госпожи́ Ли́зы дель Джоко́ндо»",
+						"«Крушение»",
+						"«Звёздная Ночь»",
+						"«Крик»",
+						"«Сотворение Адама»",
+						"«Утро в сосновом лесу»",
+						"«Девятый вал»",
+						"«После́дний день Помпе́и»",
+						"«Апофеоз войны»",
+						"«Прекрасная Розамунда»",
+						"«Ледяные горы»"];
 
 let Paintig_date = ["1490-2","варьируется между 1503 и 1505 годами","1836 год","1889 год","в промежутке между 1893 и 1910 годами","около 1511 года","1889 год","1850 год","1833 год","1871 год","около 1150 года","1870 год"];
 
@@ -17,19 +28,22 @@ for(let i = 1; i <= 4 ; i++) {
 	var section = document.createElement("div");
     section.classList.add("w3-row-padding");
 	section.classList.add("w3-section");
-    section.id=("Paintingssection"+i);
+    section.id=("Paintings_section"+'_'+i);
     Main_section.appendChild(section);	
 }
 
+console.log("123");
+
+
 for(let j = 1; j <= 4 ; j++) {
-	var P_section = document.getElementById("Paintings_section"+'_'+j);
 	for(let i = 1; i <= 3 ; i++) {
-		var section = document.createElement("div");
-		section.classList.add("w3-third");
-		section.classList.add("w3-container");
-		section.classList.add("w3-margin-bottom");
-		section.id=("Painting"+'_'+j+'_'+i);
-		P_section.appendChild(section);		
+		var P_section = document.getElementById("Paintings_section"+'_'+j);
+		var section1 = document.createElement("div");
+		section1.classList.add("w3-third");
+		section1.classList.add("w3-container");
+		section1.classList.add("w3-margin-bottom");
+		section1.id=("Painting"+'_'+j+'_'+i);
+		P_section.appendChild(section1);		
 	}
 }
 
@@ -37,11 +51,11 @@ var temp = 0;
 for(let j = 1; j <= 4 ; j++) {
 	for(let i = 1; i <= 3 ; i++) {
 		var Painting_img = document.getElementById("Painting"+'_'+j+'_'+i);	
-		var section = document.createElement("img");
-		section.classList.add("img_Paintings");
-		section.src = Paintings_img[temp];
-		section.setAttribute('alt', 'Painting_Image');
-		Painting_img.appendChild(section);	
+		var section2 = document.createElement("img");
+		section2.classList.add("img_Paintings");
+		section2.src = Paintings_img[temp];
+		section2.setAttribute('alt', 'Painting_Image');
+		Painting_img.appendChild(section2);	
 		temp = temp + 1;
 	}
 }
@@ -50,69 +64,81 @@ for(let j = 1; j <= 4 ; j++) {
 	for(let i = 1; i <= 3 ; i++) {
 		var Painting_content = document.getElementById("Painting"+'_'+j+'_'+i);
 		
-		var section = document.createElement("div");
-		section.id=("Painting_content"+'_'+j+'_'+i);
-		section.classList.add("w3-container");
-		section.classList.add("w3-white");
-		section.appendChild(section);	
+		var section3 = document.createElement("div");
+		section3.id=("Painting_content"+'_'+j+'_'+i);
+		section3.classList.add("w3-container");
+		section3.classList.add("w3-white");
+		Painting_content.appendChild(section3);	
 		
-		var Content = document.getElementById("Painting_content"+'_'+j+'_'+i);
-		var section = document.createElement("div");
-		section.id=("Content_media"+'_'+j+'_'+i);
-		section.classList.add("media");
-		Content.appendChild(section);
+		var Content4 = document.getElementById("Painting_content"+'_'+j+'_'+i);
+		var section4 = document.createElement("div");
+		section4.id=("Content_media"+'_'+j+'_'+i);
+		section4.classList.add("media");
+		Content4.appendChild(section4);
 	}
 }
 
 var temp2 = 0;
+var temp3 = 0;
+var temp4 = 0;
+var temp5 = 0;
+var temp6 = 0;
 for(let j = 1; j <= 4 ; j++) {
 	for(let i = 1; i <= 3 ; i++) {
 		var Media_left = document.getElementById("Content_media"+'_'+j+'_'+i);
-		var section = document.createElement("div");
-		section.id=("media_left"+'_'+j+'_'+i);
-		section.classList.add("media-left");
-		section.setAttribute('style', 'padding-top: 35px;');
-		Media_left.appendChild(section);
+		var section5 = document.createElement("div");
+		section5.id=("media_left"+'_'+j+'_'+i);
+		section5.classList.add("media-left");
+		section5.setAttribute('style', 'padding-top: 35px;');
+		Media_left.appendChild(section5);
 				
 		var P_Author = document.getElementById("media_left"+'_'+j+'_'+i);
-		var section = document.createElement("img");
-		section.classList.add("Author");		
-		section.src = Authors_img[temp2];
-		section.setAttribute('alt', 'Author_Image');
-		Media_left.appendChild(section);
+		var section6 = document.createElement("img");
+		section6.classList.add("Author");		
+		section6.src = Authors_img[temp2];
+		section6.setAttribute('alt', 'Author_Image');
+		P_Author.appendChild(section6);
 		temp2 = temp2 + 1;
 		
 		var Media_body = document.getElementById("Content_media"+'_'+j+'_'+i);
-		var section = document.createElement("div");
-		section.id=("media-body"+'_'+j+'_'+i);
-		section.classList.add("media-body");
-		section.setAttribute('style', 'padding-top: 5px;');
-		Media_body.appendChild(section);
+		var section7 = document.createElement("div");
+		section7.id=("media-body"+'_'+j+'_'+i);
+		section7.classList.add("media-body");
+		section7.setAttribute('style', 'padding-top: 5px;');
+		Media_body.appendChild(section7);
 		
 		var Media_body_content = document.getElementById("media-body"+'_'+j+'_'+i);
 		
 		var Content1 = document.createElement("h4");
-		
-		
+		Content1.classList.add("media-heading");
+		Content1 = document.createTextNode(Paintings_name[temp3]); 
 		Media_body_content.appendChild(Content1);
+		temp3 = temp3+1;
+		
 		var Content2 = document.createElement("h4");
-		
-		
+		Content2.id=("Content2"+'_'+j+'_'+i);
 		Media_body_content.appendChild(Content2);
+		
+		var Location_Content2_1 = document.getElementById("Content2"+'_'+j+'_'+i);
+		var Content2_1 = document.createElement("small");
+		Content2_1.id=("Content2_1"+'_'+j+'_'+i);
+		Location_Content2_1.appendChild(Content2_1);
+		
+		var Location_Content2_2 = document.getElementById("Content2_1"+'_'+j+'_'+i);
+		var Content2_2 = document.createElement("i");
+		Content2_2 = document.createTextNode("Дата написания: "+Paintig_date[temp4]); 
+		Location_Content2_2.appendChild(Content2_2);
+		temp4 = temp4+1;
+		
 		var Content3 = document.createElement("p");
-		
-		
+		Content3 = document.createTextNode("Автор: "+ Author_name[temp5]); 
 		Media_body_content.appendChild(Content3);
+		temp5 = temp5 + 1;
+		
 		var Content4 = document.createElement("p");
-		
-		
+		Content4 = document.createTextNode(Paintig_description[temp6]); 
 		Media_body_content.appendChild(Content4);
-		
-		P_section.insertAdjacentHTML("beforebegin", "<h4 class='media-heading'>"+ Paintings_name[1] +"</h4>");
-		P_section.insertAdjacentHTML("beforebegin", "<h4><small><i>Дата написания:"+ Paintig_date[1] +"</i></small></h4>");
-		P_section.insertAdjacentHTML("beforebegin", "<p>Автор: "+ Author_name[1] +"</p>");
-		P_section.insertAdjacentHTML("beforebegin", "<p>"+ Paintig_description[1] +"</p>");
-		
+		temp6 = temp6 + 1;
 	}
 }
 
