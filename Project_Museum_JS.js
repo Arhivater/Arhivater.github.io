@@ -15,8 +15,7 @@ let Paintig_description = ["Авторство Леонардо да Винчи 
 var Main_section = document.getElementById('Main_section');						
 for(let i = 1; i <= 4 ; i++) {
 	var section = document.createElement("div");
-    section.classList.add("w3-row-padding");
-    section.classList.add("w3-section");
+    section.classList.add("w3-row-padding w3-section");
     section.id=("Paintingssection"+i);
     Main_section.appendChild(section);	
 }
@@ -140,9 +139,74 @@ while (i) {
 
 */
 
+/*
+	<div class="w3-row-padding w3-section">
+		
+	    <div class="w3-third w3-container w3-margin-bottom">
+			<img class="img_Paintings"  src="https://upload.wikimedia.org/wikipedia/commons/8/83/Leonardo_da_Vinci_-_Portrait_of_a_Musician.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+			<div class="w3-container w3-white">
+				<div class="media">
+    
+					<div class="media-left" style="padding-top: 35px;">
+						<img class="Author" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Leonardo_self.jpg/150px-Leonardo_self.jpg" class="media-object" style="width:45px">
+					</div>
+    
+					<div class="media-body" style="padding-top: 5px;">
+						<h4 class="media-heading">«Портрет музыканта»</h4>
+						<h4> <small><i> Дата написания 1490-2</i></small></h4>
+						<p>Автор: Леона́рдо ди сер Пье́ро да Ви́нчи</p>
+						<p>Авторство Леонардо да Винчи оспаривается редко, хотя и существует предположение, что автором портрета является не Леонардо, а Антонелло да Мессина.</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="w3-third w3-container w3-margin-bottom">
+			<img class="img_Paintings"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+			<div class="w3-container w3-white">
+				<div class="media">
+    
+					<div class="media-left" style="padding-top: 35px;">
+						<img class="Author" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Leonardo_self.jpg/150px-Leonardo_self.jpg" class="media-object" >
+					</div>
+    
+					<div class="media-body" style="padding-top: 5px;">
+						<h4 class="media-heading">«Портре́т госпожи́ Ли́зы дель Джоко́ндо»</h4>
+						<h4> <small><i>Дата написания варьируется между 1503 и 1505 годами</i></small></h4>
+						<p>Автор: Леона́рдо ди сер Пье́ро да Ви́нчи</p>
+						<p>Одно из самых известных произведений живописи. Считается, что на картине изображена Лиза Герардини, супруга флорентийского торговца шёлком Франческо дель Джокондо.</p>
+					</div>
+	  
+				</div>
+			</div>
+		</div>
+	
+		<div class="w3-third w3-container w3-margin-bottom">
+			<img class="img_Paintings"  src="https://sun9-58.userapi.com/c845416/v845416689/826f4/8R0ZQXbkNXQ.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+			<div class="w3-container w3-white">
+				<div class="media">
+    
+					<div class="media-left" style="padding-top: 35px;">
+						<img class="Author" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Thomas_Cole.jpg">
+					</div>
+    
+					<div class="media-body" style="padding-top: 5px;">
+						<h4 class="media-heading">«Крушение»</h4>
+						<h4> <small><i>Дата написания 1836 год</i></small></h4>
+						<p>Автор: Томас Коул</p>
+						<p>Одно из картин входящих в серию из 5 картин Томаса Коула под названием <<Путь Империи>>.</p>
+					</div>
+	  
+				</div>
+			</div>
+		</div>
+	
+	</div>
 
 
 
+*/
 
 
 
