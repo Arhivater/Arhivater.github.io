@@ -1,0 +1,100 @@
+.navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        }
+        
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {height: 921px }
+        
+        /* Set gray background color and 100% height */
+        .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+        }
+        .Welcome {
+        text-align: center;
+        }
+        /* Set black background color, white text and some padding */
+        footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+		}
+		
+		/* On small screens, set height to 'auto' for sidenav and grid */
+		@media screen and (max-width: 767px) {
+		.sidenav {
+		height: auto;
+		padding: 15px;
+		}
+		.row.content {height:auto;} 
+		}
+		
+		.img_Paintings{
+		width: 439px;
+		height: 375px;
+		}
+		
+		.header_h3 {
+		color: #46b823;
+		text-align: center;
+		font-size: 30px;
+		}
+		
+		.Museum_h3 {
+		color: #46b823;
+		text-align: center;
+		font-size: 40px;
+		}
+		
+		.glyphicon glyphicon-log-in {
+		height: 10px;
+		}
+		
+		.buttons_header{
+		text-align: center;
+		}
+		
+		.fig {
+		text-align: center;
+		}
+		
+		.Author {
+		width: 45px;
+		height: 70px;
+		}
+		
+		.Background_Start {
+		color: #000000;
+		font: italic 30px "Italic",monospace;
+		border: 5px solid Black;
+		padding: 5px;
+		opacity: 0.8;
+		background: #33ccff;
+		text-align: left;
+		}
+		
+		.Title  {
+		font: italic 30px "Italic",monospace;
+		border: 5px solid Black;
+		padding: 5px;
+		margin-left: 40%;
+		margin-right: 40%;
+		opacity: 0.8;
+		background: #33ccff;
+		text-align: left;
+		}
+		
+		.Title_text { 
+		text-shadow: 1px 1px 2px black, 0 0 1em red; 
+		color: black; 
+		font-size: 2em; /* Размер надписи */
+		}
+		
+		hr {
+		border: none; /* Убираем границу */
+		background-color: #33ccff; /* Цвет линии */
+		color: #33ccff; /* Цвет линии для IE6-7 */
+		height: 5px; /* Толщина линии */
+		}
