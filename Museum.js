@@ -101,7 +101,7 @@
 };
 */
 
-$('document').ready(function9){
+$('document').ready(function){
 	MuseumJSON();
 }
 function MuseumJSON(){
