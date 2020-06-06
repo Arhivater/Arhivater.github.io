@@ -101,13 +101,17 @@
 };
 */
 
-$('document').ready(function){
+$('document').ready(function(){
 	MuseumJSON();
-}
+});
+
 function MuseumJSON(){
 	$.getJSON('List.json', function(Museum){
 		console.log(Museum);
-		function Load () {
+	})
+}
+
+function Load () {
 var amount = Museum.Paintings.length;
 var shelf = amount/3;
 var k = 0;
@@ -147,10 +151,6 @@ for(var i = 0; i < 3; i++)
 }
 }
 }
-	})
-}
-
-
 
 
 
