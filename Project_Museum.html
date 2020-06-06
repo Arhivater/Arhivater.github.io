@@ -15,27 +15,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="Museum_CSS.css">
-		
-		<script>
-			function showHint(str) {
-			if (str.length == 0) {
-			document.getElementById("txtHint").innerHTML = "";
-			return;
-			} else {
-			var xmlhttp = new XMLHttpRequest();
-			xmlhttp.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-			document.getElementById("txtHint").innerHTML = this.responseText;
-			}
-			};
-			xmlhttp.open("POST", "http://localhost:8888", true);
-			xmlhttp.send(document.getElementById("POSTparam").value);
-			}
-			}
-		</script>
-		
-		
-		
 	</head>
 	
 	<body style="background: url(Background_1.png) no-repeat; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-color: #F4A460; border-collapse: collapse; object-fit: cover;">
