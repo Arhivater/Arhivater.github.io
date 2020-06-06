@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Net;
 using System.Net.Http;
 using System.IO;
@@ -12,24 +12,17 @@ namespace server
 {
     class Program
     {
-        private class answer
-        {
-
-        }
-        static string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\server\Database.mdf;Integrated Security=True";
-        private static string sqlExpression;
-
         private static async Task Listen()
         {
 
             HttpListener listener = new HttpListener();
             listener.Prefixes.Add("http://localhost:8888/");
             listener.Start();
-            Console.WriteLine("Ожидание подключений...");
+            Console.WriteLine("РћР¶РёРґР°РЅРёРµ Р·Р°РїСЂРѕСЃР° РЅР° РІС…РѕРґ...");
 
             while (true)
             {
-                string s = "";
+                string send = "";
                 string responseString = "";
                 HttpListenerContext context = await listener.GetContextAsync();
                 HttpListenerRequest request = context.Request;
@@ -50,31 +43,19 @@ namespace server
                         Console.WriteLine("Client data content type {0}", request.ContentType);
                     }
                     Console.WriteLine("Client data content length {0}", request.ContentLength64);
+                    send = reader.ReadToEnd();
+                    Console.WriteLine("РџРѕР»СѓС‡РµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ Р»РѕРіРёРЅР° Рё РїРѕСЂРѕР»СЏ: " + send);
+                    if (send == "admin_admin")
+                    {
+                        responseString = "true";
+                    }
+                    else { responseString = "false"; }
 
-                    Console.WriteLine("Start of client data:");
-                    // Convert the data to a string and display it on the console.
-                    s = reader.ReadToEnd();
-                    Console.WriteLine("Данные запроса POST: "+s);
-                    responseString = "Ответ от сервера! Был написан POST параметр: " + s;
+
+
+
                 }
-                else
-                {
-                    s = HttpUtility.ParseQueryString(request.Url.Query).Get("say");
-                    Console.WriteLine("Данные запроса GET: " + s);
-                    responseString = @" <!DOCTYPE html>
-<html>
-<head>
-<title> Title of the document </title>
-<meta charset="+ "\"UTF-8\"" + @">
-     </head>
-
-   <body>
-<img width=" + "\"500\"" + @" src =" + "https://cdn.discordapp.com/attachments/492708867965321216/677874444395347988/-qLqvyZeWqQ.png" + @">
-   "+"Answer from server! Your GET parameter: " + s+ @"</body>
-
-</html> ";
-                }
-                Console.WriteLine("Отвечено");
+                Console.WriteLine("РћС‚РІРµС‡РµРЅРѕ");
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 response.ContentLength64 = buffer.Length;
                 Stream output = response.OutputStream;
@@ -87,7 +68,7 @@ namespace server
             //using (SqlConnection conn = new SqlConnection(connString))
             //{
             //    string sqlcomm = "'select * from [dbo].[Table]'";
-            //    // conn.Open(); // открыть соединение 
+            //    // conn.Open(); // РѕС‚РєСЂС‹С‚СЊ СЃРѕРµРґРёРЅРµРЅРёРµ 
             //    SqlCommand command = new SqlCommand(sqlcomm, conn);
             //    command.Connection.Open();
             //    //command.ExecuteNonQuery();
