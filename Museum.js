@@ -1,4 +1,4 @@
-/*var Museum = 
+var Museum = 
 {
 	"Paintings": [
 	{
@@ -99,60 +99,7 @@
 	}
 	]
 };
-*/
 
-$('document').ready(function(){
-	MuseumJSON();
-});
-
-function MuseumJSON(){
-	$.getJSON('List.json', function(Museum){
-		console.log(Museum);
-		function Load () {
-var amount = Museum.Paintings.length;
-var shelf = amount/3;
-var k = 0;
-var Main_section = document.getElementById('Main_section');	
-
-for(let g = 1; g <= shelf ; g++) {
-	var section = document.createElement("div");
-    section.classList.add("w3-row-padding");
-	section.classList.add("w3-section");
-    section.id=("Paintings_section"+'_'+g);
-    Main_section.appendChild(section);	
-
-for(var i = 0; i < 3; i++)
-{
-	var ins = "";
-    ins += 		  
-	'<div class="w3-third w3-container w3-margin-bottom">'+
-	  	'<img class="img_Paintings" src="'+Museum.Paintings[k].Paintings_img+'" alt="Norway" style="width:100%" class="w3-hover-opacity">'+
-	   	'<div class="w3-container w3-white">' +
-	   		'<div class="media">' +
-	   			'<div class="media-left" style="padding-top: 35px;">'+
-					'<img class="Author" src="'+Museum.Paintings[k].Authors_img+'" class="media-object">'+
-		   		'</div>'+
-		   		'<div class="media-body" style="padding-top: 5px;">'+
-		   			'<h4 class="media-heading">'+Museum.Paintings[k].Paintings_name+'</h4>'+
-		   			'<h4><small><i>'+Museum.Paintings[k].Paintig_date+'</i></small></h4>'+
-					'<p>'+Museum.Paintings[k].Author_name+'</p>'+
-					'<p>'+Museum.Paintings[k].Paintig_description+'</p>'
-          		'</div>'+
-          	'</div>'+
-      	'</div>'+
-    '</div>';
-	k+=1;
-
-	var id_section = "Paintings_section"+'_'+g
-	document.getElementById(id_section).innerHTML += ins;
-}
-}
-}	
-	})
-}
-
-
-/*
 function Load () {
 var amount = Museum.Paintings.length;
 var shelf = amount/3;
@@ -194,7 +141,7 @@ for(var i = 0; i < 3; i++)
 }
 }
 
-*/
+
 
 /*
 for (i in myObj.cars) {
