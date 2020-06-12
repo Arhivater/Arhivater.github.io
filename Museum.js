@@ -1,32 +1,25 @@
 var kappa="";
-var JSON_var="";
-function readJSON(path) {
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', path, true);
-	xhr.responseType = 'blob';
-	xhr.onload = function(e) { 
-		if (this.status == 200) {
-			kappa = new File([this.response], 'temp');
-			var fileReader = new FileReader();
-			fileReader.addEventListener('load', function(){
-				//do stuff with fileReader.result
-				kappa=fileReader.result;
-				JSON_var = JSON.stringify(kappa);
-				var test = readJSON("./List.json");
-				var parsed = JSON.parse(kappa.substring(0, kappa.length - 1));
-				console.log(parsed.Paintings[1].Paintings_name);
-			});
-			fileReader.readAsText(kappa);
-		} 
-	}
-	xhr.send();
-}
-
-
-
-
-
-
+        var JSON_var="";
+        function readJSON(path) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', path, true);
+        xhr.responseType = 'blob';
+        xhr.onload = function(e) { 
+          if (this.status == 200) {
+              kappa = new File([this.response], 'temp');
+              var fileReader = new FileReader();
+              fileReader.addEventListener('load', function(){
+                   //do stuff with fileReader.result
+              kappa=fileReader.result;
+              JSON_var = JSON.stringify(kappa);
+              });
+              fileReader.readAsText(kappa);
+          } 
+        }
+        xhr.send();
+    }
+    var test = readJSON("./List.json");
+     console.log(test);
 
 
 function Load () {
