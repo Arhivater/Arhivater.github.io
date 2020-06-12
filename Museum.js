@@ -1,10 +1,10 @@
 var kappa="";
-        var JSON_var="";
-        function readJSON(path) {
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', path, true);
-        xhr.responseType = 'blob';
-        xhr.onload = function(e) { 
+var JSON_var="";
+function readJSON(path) {
+var xhr = new XMLHttpRequest();
+xhr.open('GET', path, true);
+xhr.responseType = 'blob';
+xhr.onload = function(e) { 
           if (this.status == 200) {
               kappa = new File([this.response], 'temp');
               var fileReader = new FileReader();
@@ -18,10 +18,10 @@ var kappa="";
         }
         xhr.send();
     }
-    var test = readJSON("./List.json");
-    console.log(test);
-    var parsed = JSON.parse(kappa.substring(0, kappa.length - 1));
-	console.log(parsed.Paintings[1].Paintings_name);
+var test = readJSON("./test.json");
+console.log(test);
+var parsed = JSON.parse(kappa.substring(0, kappa.length - 1));
+console.log(parsed.Paintings[1].Paintings_name);
 
 
 function Load () {
