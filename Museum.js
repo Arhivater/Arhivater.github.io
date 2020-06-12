@@ -123,7 +123,7 @@ function Logout() {
 	inp1.setAttribute('type', 'text');
 	inp1.setAttribute('value', '');
 	inp1.id=("POSTparam1");
-	inp1.setAttribute('style', 'width: 149px;');
+	inp1.setAttribute('class', 'style8');
 	base.appendChild(inp1);
 	var pps = document.createElement("p");
 	pps.id=("password");
@@ -133,12 +133,12 @@ function Logout() {
 	inp2.setAttribute('type', 'password');
 	inp2.setAttribute('value', '');
 	inp2.id=("POSTparam2");
-	inp2.setAttribute('style', 'width: 149px;');
+	inp2.setAttribute('class', 'style8');
 	base.appendChild(inp2);
 	var plg2 = document.createElement("p");
 	plg2.id=("Login1");
 	plg2.setAttribute('class', 'fig');
-	plg2.setAttribute('style', 'padding-top: 10px;');
+	plg2.setAttribute('class', 'style9');
 	base.appendChild(plg2);
 	var base2 = document.getElementById("Login1");
 	var inp3 = document.createElement("input");
@@ -149,3 +149,26 @@ function Logout() {
 	inp3.setAttribute('onclick', 'showHint(this.value)');
 	base2.appendChild(inp3);
 }
+
+
+for (var l = 0; l<4; l++) {
+$('#Advertising').after(function() {
+var vst = "<a href='https://georgevorob.github.io/index.html'>"+
+	"<a href='https://georgevorob.github.io/index.html'>"+
+	"<p class='text-align: center;'>"+
+	"<img src='Advertising.png' alt='Здесь могла быть ваша реклама...'>"+
+	"</p>"+
+	"</a>"+
+	"<br>";
+  return vst;
+});
+}
+
+
+
+
+
+
+
+
+

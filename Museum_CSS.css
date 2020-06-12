@@ -1,12 +1,12 @@
-.navbar {
+		.navbar {
         margin-bottom: 0;
         border-radius: 0;
         }
+
+        .row.content {
+        	height: 921px 
+        }
         
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {height: 921px }
-        
-        /* Set gray background color and 100% height */
         .sidenav {
         padding-top: 20px;
         background-color: #f1f1f1;
@@ -15,14 +15,14 @@
         .Welcome {
         text-align: center;
         }
-        /* Set black background color, white text and some padding */
+        
         footer {
         background-color: #555;
         color: white;
         padding: 15px;
 		}
 		
-		/* On small screens, set height to 'auto' for sidenav and grid */
+		
 		@media screen and (max-width: 767px) {
 		.sidenav {
 		height: auto;
@@ -89,12 +89,72 @@
 		.Title_text { 
 		text-shadow: 1px 1px 2px black, 0 0 1em red; 
 		color: black; 
-		font-size: 2em; /* Размер надписи */
+		font-size: 2em; 
 		}
 		
 		hr {
-		border: none; /* Убираем границу */
-		background-color: #33ccff; /* Цвет линии */
-		color: #33ccff; /* Цвет линии для IE6-7 */
-		height: 5px; /* Толщина линии */
+		border: none; 
+		background-color: #33ccff; 
+		color: #33ccff; 
+		height: 5px; 
+		}
+
+		.btn-success {
+			width: 100px;height: 34px;
+			margin-left: 10px; 
+			margin-right: 10px;
+		}
+
+		.style1{
+			background: url(Background_1.png) no-repeat;
+			background-position: center center; 
+			background-repeat: no-repeat; 
+			background-attachment: fixed; 
+			background-size: cover; 
+			background-color: #F4A460; 
+			border-collapse: collapse; 
+			object-fit: cover;
+		}
+
+		.style2{
+			border-top-width: 15px; 
+			border-bottom-width: 15px;		
+		}
+
+		.style3{
+			height: 1130px;
+		}
+
+		.style4{
+			height: 130px; 
+			width: 130px;
+		}
+
+		.style5{
+			color: #0CFF00;
+		}
+
+		.style6{
+			height: 280px; 
+			top: 20px; 
+			right: 20px; 
+			left: 10px; 
+			width: 290px;
+		}
+
+		.style7{
+			height: 240px;
+		}
+
+		.style8{
+			width: 149px;
+		}
+
+		.style9{
+			padding-top: 10px;
+		}
+
+		.style10{
+			text-align: right; 
+			margin-top: 29px;
 		}
