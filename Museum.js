@@ -20,7 +20,7 @@ var kappa="";
     }
     var test = readJSON("./List.json");
      console.log(test);
-
+/*
 
 function Load () {
 	var amount = Museum.Paintings.length;
@@ -148,6 +148,9 @@ function Logout() {
 	inp3.setAttribute('onclick', 'showHint(this.value)');
 	base2.appendChild(inp3);
 }
+
+
+*/
 
 /*
 	for (i in myObj.cars) {
