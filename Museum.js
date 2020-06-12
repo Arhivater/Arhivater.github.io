@@ -14,7 +14,6 @@ xhr.onload = function(e) {
               kappa=fileReader.result;
               JSON_var = JSON.stringify(kappa);
               Museum = JSON.parse(kappa.substring(0, kappa.length - 1));
-			  console.log(Museum.Paintings[1].Paintings_name);
               });
               fileReader.readAsText(kappa);
           } 
