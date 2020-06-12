@@ -1,5 +1,6 @@
 var kappa="";
 var JSON_var="";
+var Museum="";
 function readJSON(path) {
 var xhr = new XMLHttpRequest();
 xhr.open('GET', path, true);
@@ -12,7 +13,7 @@ xhr.onload = function(e) {
                    //do stuff with fileReader.result
               kappa=fileReader.result;
               JSON_var = JSON.stringify(kappa);
-              var Museum = JSON.parse(kappa.substring(0, kappa.length - 1));
+              Museum = JSON.parse(kappa.substring(0, kappa.length - 1));
 			  console.log(Museum.Paintings[1].Paintings_name);
               });
               fileReader.readAsText(kappa);
