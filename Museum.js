@@ -12,7 +12,6 @@ var kappa="";
                    //do stuff with fileReader.result
               kappa=fileReader.result;
               JSON_var = JSON.stringify(kappa);
-              console.log(kappa);
               });
               fileReader.readAsText(kappa);
           } 
@@ -20,10 +19,9 @@ var kappa="";
         xhr.send();
     }
     var test = readJSON("./List.json");
-    console.log(test);
-    var parsed = JSON.parse(kappa.substring(0, kappa.length - 1));
-	console.log(parsed.Paintings[1].Paintings_name);
-/*
+    var Museum = JSON.parse(kappa.substring(0, kappa.length - 1));
+	console.log(Museum.Paintings[1].Paintings_name);
+
 
 function Load () {
 	var amount = Museum.Paintings.length;
@@ -153,7 +151,7 @@ function Logout() {
 }
 
 
-*/
+
 
 /*
 	for (i in myObj.cars) {
