@@ -19,7 +19,7 @@ xhr.onload = function(e) {
         xhr.send();
     }
 readJSON("./List.json");
-var parsed = JSON.parse(kappa.substring(0, kappa.length - 1));
+var parsed = JSON.parse(kappa.substring(0, kappa.length));
 console.log(parsed.Paintings[1].Paintings_name);
 
 
