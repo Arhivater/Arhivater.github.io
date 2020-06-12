@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Data.SqlTypes;
 using System.Data.SqlClient;
 using System.Web;
-//using System.Data.SqlClient;
 
 namespace server
 {
@@ -50,10 +49,6 @@ namespace server
                         responseString = "true";
                     }
                     else { responseString = "false"; }
-
-
-
-
                 }
                 Console.WriteLine("Отвечено");
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
@@ -65,15 +60,6 @@ namespace server
         }
         static async Task Main(string[] args)
         {
-            //using (SqlConnection conn = new SqlConnection(connString))
-            //{
-            //    string sqlcomm = "'select * from [dbo].[Table]'";
-            //    // conn.Open(); // открыть соединение 
-            //    SqlCommand command = new SqlCommand(sqlcomm, conn);
-            //    command.Connection.Open();
-            //    //command.ExecuteNonQuery();
-            //    SqlDataReader Reader = command.ExecuteReader();
-            //}
             await Listen();
         }
     }
