@@ -12,6 +12,7 @@ var kappa="";
                    //do stuff with fileReader.result
               kappa=fileReader.result;
               JSON_var = JSON.stringify(kappa);
+              console.log(kappa);
               });
               fileReader.readAsText(kappa);
           } 
@@ -19,7 +20,7 @@ var kappa="";
         xhr.send();
     }
     var test = readJSON("./List.json");
-     console.log(test);
+    console.log(test);
 /*
 
 function Load () {
