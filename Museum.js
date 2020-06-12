@@ -10,7 +10,6 @@ xhr.onload = function(e) {
               kappa = new File([this.response], 'temp');
               var fileReader = new FileReader();
               fileReader.addEventListener('load', function(){
-                   //do stuff with fileReader.result
               kappa=fileReader.result;
               JSON_var = JSON.stringify(kappa);
               Museum = JSON.parse(kappa.substring(0, kappa.length - 1));

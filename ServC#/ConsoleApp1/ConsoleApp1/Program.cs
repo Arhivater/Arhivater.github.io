@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Net;
-using System.Net.Http;
 using System.IO;
 using System.Threading.Tasks;
-using System.Data.SqlTypes;
-using System.Data.SqlClient;
-using System.Web;
 
 namespace server
 {
@@ -13,7 +9,6 @@ namespace server
     {
         private static async Task Listen()
         {
-
             HttpListener listener = new HttpListener();
             listener.Prefixes.Add("http://localhost:8888/");
             listener.Start();
