@@ -1,26 +1,27 @@
-    var kappa="";
-        var JSON_var="";
-        function readJSON(path) {
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', path, true);
-        xhr.responseType = 'blob';
-        xhr.onload = function(e) { 
-          if (this.status == 200) {
-              kappa = new File([this.response], 'temp');
-              var fileReader = new FileReader();
-              fileReader.addEventListener('load', function(){
-                   //do stuff with fileReader.result
-              kappa=fileReader.result;
-              JSON_var = JSON.stringify(kappa);
-              });
-              fileReader.readAsText(kappa);
-          } 
-        }
-        xhr.send();
-    }
-    var test = readJSON("./List.json");
-    var parsed = JSON.parse(kappa.substring(0, kappa.length - 1));
-	console.log(parsed.Paintings[1].Paintings_name);
+var kappa="";
+var JSON_var="";
+function readJSON(path) {
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', path, true);
+	xhr.responseType = 'blob';
+	xhr.onload = function(e) { 
+		if (this.status == 200) {
+			kappa = new File([this.response], 'temp');
+			var fileReader = new FileReader();
+			fileReader.addEventListener('load', function(){
+				//do stuff with fileReader.result
+				kappa=fileReader.result;
+				JSON_var = JSON.stringify(kappa);
+				var test = readJSON("./List.json");
+				var parsed = JSON.parse(kappa.substring(0, kappa.length - 1));
+				console.log(parsed.Paintings[1].Paintings_name);
+			});
+			fileReader.readAsText(kappa);
+		} 
+	}
+	xhr.send();
+}
+
 
 
 
@@ -99,7 +100,7 @@ function showHint(str) {
 					Logout.setAttribute('value', 'Logout');
 					Logout.setAttribute('onclick', 'Logout()');
 					base.appendChild(Logout);
-				} else {
+					} else {
 					document.getElementById("POSTparam1").value="";
 					document.getElementById("POSTparam2").value = "";
 					alert("Введенные данные логина или пароля были не верны");				
@@ -177,122 +178,122 @@ function Logout() {
 	for(let i = 1; i <= 4 ; i++) {
 	var section = document.createElement("div");
     section.classList.add("w3-row-padding");
-section.classList.add("w3-section");
-section.id=("Paintings_section"+'_'+i);
-Main_section.appendChild(section);	
-}
-
-console.log("123");
-
-
-for(let j = 1; j <= 4 ; j++) {
-for(let i = 1; i <= 3 ; i++) {
-var P_section = document.getElementById("Paintings_section"+'_'+j);
-var section1 = document.createElement("div");
-section1.classList.add("w3-third");
-section1.classList.add("w3-container");
-section1.classList.add("w3-margin-bottom");
-section1.id=("Painting"+'_'+j+'_'+i);
-P_section.appendChild(section1);		
-}
-}
-
-var temp = 0;
-for(let j = 1; j <= 4 ; j++) {
-for(let i = 1; i <= 3 ; i++) {
-var Painting_img = document.getElementById("Painting"+'_'+j+'_'+i);	
-var section2 = document.createElement("img");
-section2.classList.add("img_Paintings");
-section2.src = Paintings_img[temp];
-section2.setAttribute('alt', 'Painting_Image');
-Painting_img.appendChild(section2);	
-temp = temp + 1;
-}
-}
-
-for(let j = 1; j <= 4 ; j++) {
-for(let i = 1; i <= 3 ; i++) {
-var Painting_content = document.getElementById("Painting"+'_'+j+'_'+i);
-
-var section3 = document.createElement("div");
-section3.id=("Painting_content"+'_'+j+'_'+i);
-section3.classList.add("w3-container");
-section3.classList.add("w3-white");
-Painting_content.appendChild(section3);	
-
-var Content4 = document.getElementById("Painting_content"+'_'+j+'_'+i);
-var section4 = document.createElement("div");
-section4.id=("Content_media"+'_'+j+'_'+i);
-section4.classList.add("media");
-Content4.appendChild(section4);
-}
-}
-
-var temp2 = 0;
-var temp3 = 0;
-var temp4 = 0;
-var temp5 = 0;
-var temp6 = 0;
-for(let j = 1; j <= 4 ; j++) {
-for(let i = 1; i <= 3 ; i++) {
-var Media_left = document.getElementById("Content_media"+'_'+j+'_'+i);
-var section5 = document.createElement("div");
-section5.id=("media_left"+'_'+j+'_'+i);
-section5.classList.add("media-left");
-section5.setAttribute('style', 'padding-top: 35px;');
-Media_left.appendChild(section5);
-
-var P_Author = document.getElementById("media_left"+'_'+j+'_'+i);
-var section6 = document.createElement("img");
-section6.classList.add("Author");		
-section6.src = Authors_img[temp2];
-section6.setAttribute('alt', 'Author_Image');
-P_Author.appendChild(section6);
-temp2 = temp2 + 1;
-
-var Media_body = document.getElementById("Content_media"+'_'+j+'_'+i);
-var section7 = document.createElement("div");
-section7.id=("media-body"+'_'+j+'_'+i);
-section7.classList.add("media-body");
-section7.setAttribute('style', 'padding-top: 5px;');
-Media_body.appendChild(section7);
-
-var Media_body_content = document.getElementById("media-body"+'_'+j+'_'+i);
-
-var Content1 = document.createElement("h4");
-Content1.classList.add("media-heading");
-Content1 = document.createTextNode(Paintings_name[temp3]); 
-Media_body_content.appendChild(Content1);
-temp3 = temp3+1;
-
-var Content2 = document.createElement("h4");
-Content2.id=("Content2"+'_'+j+'_'+i);
-Media_body_content.appendChild(Content2);
-
-var Location_Content2_1 = document.getElementById("Content2"+'_'+j+'_'+i);
-var Content2_1 = document.createElement("small");
-Content2_1.id=("Content2_1"+'_'+j+'_'+i);
-Location_Content2_1.appendChild(Content2_1);
-
-var Location_Content2_2 = document.getElementById("Content2_1"+'_'+j+'_'+i);
-var Content2_2 = document.createElement("i");
-Content2_2 = document.createTextNode("Дата написания: "+Paintig_date[temp4]); 
-Location_Content2_2.appendChild(Content2_2);
-temp4 = temp4+1;
-
-var Content3 = document.createElement("p");
-Content3 = document.createTextNode("Автор: "+ Author_name[temp5]); 
-Media_body_content.appendChild(Content3);
-temp5 = temp5 + 1;
-
-var Content4 = document.createElement("p");
-Content4 = document.createTextNode(Paintig_description[temp6]); 
-Media_body_content.appendChild(Content4);
-temp6 = temp6 + 1;
-}
-}
-
-
+	section.classList.add("w3-section");
+	section.id=("Paintings_section"+'_'+i);
+	Main_section.appendChild(section);	
+	}
+	
+	console.log("123");
+	
+	
+	for(let j = 1; j <= 4 ; j++) {
+	for(let i = 1; i <= 3 ; i++) {
+	var P_section = document.getElementById("Paintings_section"+'_'+j);
+	var section1 = document.createElement("div");
+	section1.classList.add("w3-third");
+	section1.classList.add("w3-container");
+	section1.classList.add("w3-margin-bottom");
+	section1.id=("Painting"+'_'+j+'_'+i);
+	P_section.appendChild(section1);		
+	}
+	}
+	
+	var temp = 0;
+	for(let j = 1; j <= 4 ; j++) {
+	for(let i = 1; i <= 3 ; i++) {
+	var Painting_img = document.getElementById("Painting"+'_'+j+'_'+i);	
+	var section2 = document.createElement("img");
+	section2.classList.add("img_Paintings");
+	section2.src = Paintings_img[temp];
+	section2.setAttribute('alt', 'Painting_Image');
+	Painting_img.appendChild(section2);	
+	temp = temp + 1;
+	}
+	}
+	
+	for(let j = 1; j <= 4 ; j++) {
+	for(let i = 1; i <= 3 ; i++) {
+	var Painting_content = document.getElementById("Painting"+'_'+j+'_'+i);
+	
+	var section3 = document.createElement("div");
+	section3.id=("Painting_content"+'_'+j+'_'+i);
+	section3.classList.add("w3-container");
+	section3.classList.add("w3-white");
+	Painting_content.appendChild(section3);	
+	
+	var Content4 = document.getElementById("Painting_content"+'_'+j+'_'+i);
+	var section4 = document.createElement("div");
+	section4.id=("Content_media"+'_'+j+'_'+i);
+	section4.classList.add("media");
+	Content4.appendChild(section4);
+	}
+	}
+	
+	var temp2 = 0;
+	var temp3 = 0;
+	var temp4 = 0;
+	var temp5 = 0;
+	var temp6 = 0;
+	for(let j = 1; j <= 4 ; j++) {
+	for(let i = 1; i <= 3 ; i++) {
+	var Media_left = document.getElementById("Content_media"+'_'+j+'_'+i);
+	var section5 = document.createElement("div");
+	section5.id=("media_left"+'_'+j+'_'+i);
+	section5.classList.add("media-left");
+	section5.setAttribute('style', 'padding-top: 35px;');
+	Media_left.appendChild(section5);
+	
+	var P_Author = document.getElementById("media_left"+'_'+j+'_'+i);
+	var section6 = document.createElement("img");
+	section6.classList.add("Author");		
+	section6.src = Authors_img[temp2];
+	section6.setAttribute('alt', 'Author_Image');
+	P_Author.appendChild(section6);
+	temp2 = temp2 + 1;
+	
+	var Media_body = document.getElementById("Content_media"+'_'+j+'_'+i);
+	var section7 = document.createElement("div");
+	section7.id=("media-body"+'_'+j+'_'+i);
+	section7.classList.add("media-body");
+	section7.setAttribute('style', 'padding-top: 5px;');
+	Media_body.appendChild(section7);
+	
+	var Media_body_content = document.getElementById("media-body"+'_'+j+'_'+i);
+	
+	var Content1 = document.createElement("h4");
+	Content1.classList.add("media-heading");
+	Content1 = document.createTextNode(Paintings_name[temp3]); 
+	Media_body_content.appendChild(Content1);
+	temp3 = temp3+1;
+	
+	var Content2 = document.createElement("h4");
+	Content2.id=("Content2"+'_'+j+'_'+i);
+	Media_body_content.appendChild(Content2);
+	
+	var Location_Content2_1 = document.getElementById("Content2"+'_'+j+'_'+i);
+	var Content2_1 = document.createElement("small");
+	Content2_1.id=("Content2_1"+'_'+j+'_'+i);
+	Location_Content2_1.appendChild(Content2_1);
+	
+	var Location_Content2_2 = document.getElementById("Content2_1"+'_'+j+'_'+i);
+	var Content2_2 = document.createElement("i");
+	Content2_2 = document.createTextNode("Дата написания: "+Paintig_date[temp4]); 
+	Location_Content2_2.appendChild(Content2_2);
+	temp4 = temp4+1;
+	
+	var Content3 = document.createElement("p");
+	Content3 = document.createTextNode("Автор: "+ Author_name[temp5]); 
+	Media_body_content.appendChild(Content3);
+	temp5 = temp5 + 1;
+	
+	var Content4 = document.createElement("p");
+	Content4 = document.createTextNode(Paintig_description[temp6]); 
+	Media_body_content.appendChild(Content4);
+	temp6 = temp6 + 1;
+	}
+	}
+	
+	
 */
 
 
