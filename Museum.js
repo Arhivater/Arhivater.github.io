@@ -14,13 +14,14 @@ var kappa="";
               JSON_var = JSON.stringify(kappa);
               });
               fileReader.readAsText(kappa);
+              var Museum = JSON.parse(kappa.substring(0, kappa.length - 1));
+			  console.log(Museum.Paintings[1].Paintings_name);
           } 
         }
         xhr.send();
     }
     var test = readJSON("./List.json");
-    var Museum = JSON.parse(kappa.substring(0, kappa.length - 1));
-	console.log(Museum.Paintings[1].Paintings_name);
+    
 
 
 function Load () {
