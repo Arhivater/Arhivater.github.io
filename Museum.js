@@ -1,6 +1,7 @@
 var kappa="";
 var JSON_var="";
 var Museum="";
+
 function readJSON(path) {
 var xhr = new XMLHttpRequest();
 xhr.open('GET', path, true);
