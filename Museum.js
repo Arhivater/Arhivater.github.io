@@ -163,11 +163,3 @@ var vst = "<a href='https://georgevorob.github.io/index.html'>"+
 });
 }
 }
-
-
-
-
-
-
-
-
