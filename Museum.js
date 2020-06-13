@@ -22,9 +22,9 @@ xhr.onload = function(e) {
 readJSON("./List.json");
 
 function Load () {
+	Adver();
 	var amount = Museum.Paintings.length;
 	var shelf = amount/3;
-//	Math.ceil(shelf);
 	var k = 0;
 	var Main_section = document.getElementById('Main_section');	
 	
@@ -149,7 +149,7 @@ function Logout() {
 	base2.appendChild(inp3);
 }
 
-
+function Adver () {
 for (var l = 0; l<4; l++) {
 $('#Advertising').after(function() {
 var vst = "<a href='https://georgevorob.github.io/index.html'>"+
@@ -162,7 +162,7 @@ var vst = "<a href='https://georgevorob.github.io/index.html'>"+
   return vst;
 });
 }
-
+}
 
 
 
