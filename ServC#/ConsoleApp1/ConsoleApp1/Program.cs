@@ -10,7 +10,7 @@ namespace server
         private static async Task Listen()
         {
             HttpListener listener = new HttpListener();
-            listener.Prefixes.Add("http://localhost:8888/");
+            listener.Prefixes.Add("http://localhost:1111/");
             listener.Start();
             Console.WriteLine("Ожидание запроса на вход...");
 

@@ -100,7 +100,7 @@ function showHint(str) {
 				}
 			}
 		};
-		xmlhttp.open("POST", "http://localhost:8888", true);
+		xmlhttp.open("POST", "http://localhost:1111", true);
 		var send ="";
 		name = document.getElementById("POSTparam1").value;
 		send = document.getElementById("POSTparam1").value;
