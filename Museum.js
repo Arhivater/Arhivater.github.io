@@ -68,7 +68,6 @@ function Load () {
 function Login(str) {
 	var name = "";
 	if (str.length == 0) {
-		document.getElementById("txtHint").innerHTML = "";
 		return;
 		} else {
 		var xmlhttp = new XMLHttpRequest();
@@ -76,7 +75,7 @@ function Login(str) {
 			if (this.readyState == 4 && this.status == 200) {
 				var key = this.responseText;
 				if (key == "true"){
-					alert("Добро пожаловать!");
+					alert("Добро пожаловать " + name + " !");
 					document.getElementById("POSTparam1").remove();
 					document.getElementById("POSTparam2").remove();
 					document.getElementById("password").remove();
