@@ -65,7 +65,7 @@ function Load () {
 }
 
 
-function showHint(str) {
+function Login(str) {
 	var name = "";
 	if (str.length == 0) {
 		document.getElementById("txtHint").innerHTML = "";
@@ -146,7 +146,7 @@ function Logout() {
 	inp3.setAttribute('value', '');
 	inp3.id=("Login2");
 	inp3.setAttribute('value', 'Login');
-	inp3.setAttribute('onclick', 'showHint(this.value)');
+	inp3.setAttribute('onclick', 'Login(this.value)');
 	base2.appendChild(inp3);
 }
 
