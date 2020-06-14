@@ -202,6 +202,9 @@ function Login(str) {
 					Logout.setAttribute('onclick', 'Add_element()');
 					base.appendChild(Logout);
 
+					var addp = document.createElement("p");
+					base.appendChild(addp);
+
 					var Logout = document.createElement("input");
 					Logout.setAttribute('type', 'button');
 					Logout.id=("Logout_Museum");
