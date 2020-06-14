@@ -119,7 +119,7 @@ function Login(str) {
 					id_setd = document.getElementById('select_to_delet'),
   					item = document.createElement('option');
 					for (var i = 0; i < Museum.Paintings.length; i++) {
-  						item.innerHTML = Museum.Paintings[i].name;
+  						item.innerHTML = Museum.Paintings[i].Paintings_name;
   						id_setd.appendChild(item.cloneNode(true));
 					}
 
