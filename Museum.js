@@ -28,7 +28,7 @@ Adver();
 
 function Load() {
 	Clear_Main_section = document.getElementById('Main_section');
-
+	Clear_Main_section.innerHTML = '';
 	var amount = Museum.Paintings.length;
 	var shelf = Math.ceil(amount/3);
 	var k = 0;
@@ -62,7 +62,8 @@ function Load() {
 			'</div>'+
 			'</div>';
 
-			if (k < amount+1){
+			var lim = (amount+1);
+			if (k < lim){
 			k+=1;
 			}
 
