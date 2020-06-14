@@ -278,7 +278,6 @@ function Add_element() {
   		item.setAttribute('value', i);
   		id_setd.appendChild(item.cloneNode(true));
 	}
-
 	Load();	
 }
 
