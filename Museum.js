@@ -71,7 +71,7 @@ function Load() {
 			document.getElementById(id_section).innerHTML += ins;
 		}
 	}
-	try {
+	if (ref >= 1) {
 		var id_setd = document.getElementById('select_to_delet'),
 		id_setd.innerHTML = '';
 		item = document.createElement('option');
@@ -81,7 +81,7 @@ function Load() {
   			id_setd.appendChild(item.cloneNode(true));
 		}
 	}
-	[catch(){}]
+	ref += 1;
 }
 
 function Login(str) {
