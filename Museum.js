@@ -98,22 +98,20 @@ function Login(str) {
 				var key = this.responseText;
 				if (key == "true"){
 					alert("Добро пожаловать " + name + " !");
-					document.getElementById("POSTparam1").remove();
-					document.getElementById("POSTparam2").remove();
-					document.getElementById("password").remove();
-					document.getElementById("Login1").remove();
-					document.getElementById("lg").remove();
-					var base = document.getElementById("Login_Museum");	
+					var base = document.getElementById("Login_Museum");
+					base.innerHTML = '';	
 					var Log = document.createElement("p");
 					Log.id=("Logo_name");
 					base.appendChild(Log);
 					document.getElementById("Logo_name").innerHTML="Логин: " + name;
 
 					// <select name="" id="select"></select>
+					var Log = document.createElement("p");
+					Log.id=("Logo_name");
 					var setd = document.createElement("select");
 					setd.setAttribute('name', '');
 					setd.id=("select_to_delet");
-					setd.setAttribute('class', 'style11');
+					setd.setAttribute('class', 'style11 style12');
 					base.appendChild(setd);
 					id_setd.innerHTML = '';
 					id_setd = document.getElementById('select_to_delet'),
@@ -165,11 +163,8 @@ function Delet_element() {
 }
 
 function Logout() {
-	document.getElementById("Logout_Museum").remove();
-	document.getElementById("Logo_name").remove();
-	document.getElementById("confirm_deletion").remove();
-	document.getElementById("select_to_delet").remove();
 	var base = document.getElementById("Login_Museum");
+	base.innerHTML = '';
 	var plg = document.createElement("p");
 	plg.id=("lg");
 	base.appendChild(plg);
