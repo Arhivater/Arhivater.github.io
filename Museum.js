@@ -68,7 +68,6 @@ function Load() {
 	}
 }
 
-
 function Login(str) {
 	var name = "";
 	if (str.length == 0) {
