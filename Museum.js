@@ -124,7 +124,7 @@ function Login(str) {
 
 					var addlT0 = document.createElement("p");
 					addlT0.id = ("add_txt0");
-					base.appendChild(addlT);
+					base.appendChild(addlT0);
 					document.getElementById("add_txt0").innerText="ссылка на картину";
 
 					var inp0 = document.createElement("input");
