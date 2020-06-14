@@ -24,9 +24,9 @@ xhr.onload = function(e) {
 }
 
 readJSON(path);
+Adver();
 
 function Load() {
-	Adver();
 	var amount = Museum.Paintings.length;
 	var shelf = Math.ceil(amount/3);
 	var k = 0;
