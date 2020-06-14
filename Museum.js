@@ -81,7 +81,7 @@ function Load() {
   			id_setd.appendChild(item.cloneNode(true));
 		}
 	} else {
-	ref = ref + 1;
+	ref += 1;
 	}
 }
 
