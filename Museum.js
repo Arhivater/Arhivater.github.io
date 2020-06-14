@@ -91,7 +91,6 @@ function Login(str) {
 					base.appendChild(Log);
 					document.getElementById("Logo_name").innerHTML="Пользователь: " + name;
 
-					// <select name="" id="select"></select>
 					var dlT = document.createElement("p");
 					dlT.id = ("del_txt");
 					base.appendChild(dlT);
@@ -151,6 +150,16 @@ function Delet_element() {
 	var select = document.getElementById("select_to_delet");
     var del_element = select.value;
 	Museum.Paintings.splice(del_element, 1);
+
+	var id_setd = document.getElementById('select_to_delet');
+	id_setd.innerHTML = '';
+  	item = document.createElement('option');
+	for (var i = 0; i < Museum.Paintings.length; i++) {
+  		item.innerHTML = Museum.Paintings[i].Paintings_name;
+  		item.setAttribute('value', i);
+  		id_setd.appendChild(item.cloneNode(true));
+	}
+
 	Load();	
 }
 
