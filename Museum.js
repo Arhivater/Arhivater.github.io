@@ -72,7 +72,7 @@ function Load() {
 			document.getElementById(id_section).innerHTML += ins;
 		}
 	}
-
+	try {
 		id_setd = document.getElementById('select_to_delet'),
 		id_setd.innerHTML = '';
 		item = document.createElement('option');
@@ -81,6 +81,8 @@ function Load() {
   			item.setAttribute('value', i);
   			id_setd.appendChild(item.cloneNode(true));
 		}
+	}
+	[catch(){}]
 }
 
 function Login(str) {
