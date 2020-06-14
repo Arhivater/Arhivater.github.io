@@ -29,6 +29,7 @@ function Load() {
 	Adver();
 	var amount = Museum.Paintings.length;
 	var shelf = amount/3;
+	Math.ceil(shelf);
 	var k = 0;
 	var Main_section = document.getElementById('Main_section');	
 	
