@@ -71,18 +71,6 @@ function Load() {
 			document.getElementById(id_section).innerHTML += ins;
 		}
 	}
-	if (ref == 2) {
-		var id_setd = document.getElementById('select_to_delet'),
-		id_setd.innerHTML = '';
-		item = document.createElement('option');
-		for (var i = 0; i < arr.length; i++) {
-  			item.innerHTML = Museum.Paintings[i].name;
-  			item.setAttribute('value', i);
-  			id_setd.appendChild(item.cloneNode(true));
-		}
-	} else {
-	ref += 1;
-	}
 }
 
 function Login(str) {
