@@ -62,7 +62,7 @@ function Load() {
 			'</div>'+
 			'</div>';
 
-			if (k <= amount){
+			if (k != amount){
 			k+=1;
 			}
 
