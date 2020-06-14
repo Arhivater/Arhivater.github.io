@@ -24,7 +24,7 @@ xhr.onload = function(e) {
 }
 
 readJSON(path);
-Adver();
+
 
 function Load() {
 	Clear_Main_section = document.getElementById('Main_section');
@@ -72,6 +72,8 @@ function Load() {
 		}
 	}
 }
+
+// Museum.Paintings.splice(3, 1);
 
 function Login(str) {
 	var name = "";
