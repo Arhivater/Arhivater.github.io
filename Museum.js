@@ -117,6 +117,9 @@ function Login(str) {
 					confdel.setAttribute('onclick', 'Delet_element()');
 					base.appendChild(confdel);
 
+					var addp1 = document.createElement("p");
+					base.appendChild(addp1);
+
 					var addlT = document.createElement("p");
 					addlT.id = ("add_txt");
 					base.appendChild(addlT);
@@ -202,8 +205,8 @@ function Login(str) {
 					Logout.setAttribute('onclick', 'Add_element()');
 					base.appendChild(Logout);
 
-					var addp = document.createElement("p");
-					base.appendChild(addp);
+					var addp2 = document.createElement("p");
+					base.appendChild(addp2);
 
 					var Logout = document.createElement("input");
 					Logout.setAttribute('type', 'button');
