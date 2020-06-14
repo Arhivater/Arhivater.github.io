@@ -71,7 +71,7 @@ function Load() {
 			document.getElementById(id_section).innerHTML += ins;
 		}
 	}
-	if (ref = 2) {
+	if (ref == 2) {
 		var id_setd = document.getElementById('select_to_delet'),
 		id_setd.innerHTML = '';
 		item = document.createElement('option');
