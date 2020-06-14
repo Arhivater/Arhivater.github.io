@@ -1,6 +1,7 @@
 var kappa="";
 var JSON_var="";
 var Museum="";
+var path="./List.json";
 
 function readJSON(path) {
 var xhr = new XMLHttpRequest();
@@ -19,11 +20,12 @@ xhr.onload = function(e) {
           } 
         }
         xhr.send();
-    }
-readJSON("./List.json");
+}
+
+readJSON(path);
+Adver();
 
 function Load() {
-	Adver();
 	readJSON("./List.json");
 	var amount = Museum.Paintings.length;
 	var shelf = amount/3;
