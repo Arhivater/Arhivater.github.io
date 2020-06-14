@@ -24,6 +24,7 @@ readJSON("./List.json");
 
 function Load () {
 	Adver();
+	readJSON("./List.json");
 	var amount = Museum.Paintings.length;
 	var shelf = amount/3;
 	var k = 0;
