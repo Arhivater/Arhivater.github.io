@@ -27,6 +27,8 @@ readJSON(path);
 Adver();
 
 function Load() {
+	Clear_Main_section = document.getElementById('Main_section');
+
 	var amount = Museum.Paintings.length;
 	var shelf = Math.ceil(amount/3);
 	var k = 0;
@@ -59,8 +61,11 @@ function Load() {
           	'</div>'+
 			'</div>'+
 			'</div>';
+
+			if (k <= amount){
 			k+=1;
-			
+			}
+
 			var id_section = "Paintings_section"+'_'+g
 			document.getElementById(id_section).innerHTML += ins;
 		}
