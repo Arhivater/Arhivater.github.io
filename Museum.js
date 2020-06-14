@@ -22,7 +22,7 @@ xhr.onload = function(e) {
     }
 readJSON("./List.json");
 
-function Load () {
+function Load() {
 	Adver();
 	readJSON("./List.json");
 	var amount = Museum.Paintings.length;
