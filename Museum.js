@@ -103,11 +103,13 @@ function Login(str) {
 					var Log = document.createElement("p");
 					Log.id=("Logo_name");
 					base.appendChild(Log);
-					document.getElementById("Logo_name").innerHTML="Логин: " + name;
+					document.getElementById("Logo_name").innerHTML="Пользователь: " + name;
 
 					// <select name="" id="select"></select>
-					var Log = document.createElement("p");
-					Log.id=("Logo_name");
+					var dlT = document.createElement("p");
+					dlT.id = ("del_txt");
+					base.appendChild(dlT);
+					document.getElementById("del_txt").innerText="Удалить";
 					var setd = document.createElement("select");
 					setd.setAttribute('name', '');
 					setd.id=("select_to_delet");
@@ -128,6 +130,9 @@ function Login(str) {
 					confdel.setAttribute('class', 'style11');
 					confdel.setAttribute('onclick', 'Delet_element()');
 					base.appendChild(confdel);
+
+					var p = document.createElement("p");
+					base.appendChild(p);
 
 					var Logout = document.createElement("input");
 					Logout.setAttribute('type', 'button');
