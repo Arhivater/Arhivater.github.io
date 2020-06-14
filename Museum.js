@@ -94,7 +94,7 @@ function Login(str) {
 					var dlT = document.createElement("p");
 					dlT.id = ("del_txt");
 					base.appendChild(dlT);
-					document.getElementById("del_txt").innerText="Удалить";
+					document.getElementById("del_txt").innerText="Удалить картину";
 					var setd = document.createElement("select");
 					setd.setAttribute('name', '');
 					setd.id=("select_to_delet");
@@ -117,8 +117,90 @@ function Login(str) {
 					confdel.setAttribute('onclick', 'Delet_element()');
 					base.appendChild(confdel);
 
-					var p = document.createElement("p");
-					base.appendChild(p);
+					var addlT = document.createElement("p");
+					addlT.id = ("add_txt");
+					base.appendChild(addlT);
+					document.getElementById("add_txt").innerText="Добавить картину";
+
+					var addlT0 = document.createElement("p");
+					addlT0.id = ("add_txt0");
+					base.appendChild(addlT);
+					document.getElementById("add_txt0").innerText="ссылка на картину";
+
+					var inp0 = document.createElement("input");
+					inp0.setAttribute('type', 'text');
+					inp0.setAttribute('value', '');
+					inp0.id=("id_p_img_src");
+					inp0.setAttribute('class', 'style8');
+					base.appendChild(inp0);
+
+					var addlT9 = document.createElement("p");
+					addlT9.id = ("add_txt9");
+					base.appendChild(addlT9);
+					document.getElementById("add_txt9").innerText="ссылка на изображение автора";
+
+					var inp9 = document.createElement("input");
+					inp9.setAttribute('type', 'text');
+					inp9.setAttribute('value', '');
+					inp9.id=("id_aut_img_src");
+					inp9.setAttribute('class', 'style8');
+					base.appendChild(inp9);
+
+					var addlT8 = document.createElement("p");
+					addlT8.id = ("add_txt8");
+					base.appendChild(addlT8);
+					document.getElementById("add_txt8").innerText="Название картины";
+
+					var inp8 = document.createElement("input");
+					inp8.setAttribute('type', 'text');
+					inp8.setAttribute('value', '');
+					inp8.id=("id_p_n");
+					inp8.setAttribute('class', 'style8');
+					base.appendChild(inp8);
+
+					var addlT7 = document.createElement("p");
+					addlT7.id = ("add_txt7");
+					base.appendChild(addlT7);
+					document.getElementById("add_txt7").innerText="Дата написания";
+
+					var inp7 = document.createElement("input");
+					inp7.setAttribute('type', 'text');
+					inp7.setAttribute('value', '');
+					inp7.id=("id_p_d");
+					inp7.setAttribute('class', 'style8');
+					base.appendChild(inp7);
+
+					var addlT6 = document.createElement("p");
+					addlT6.id = ("add_txt6");
+					base.appendChild(addlT6);
+					document.getElementById("add_txt6").innerText="Имя Автора/Авторов";
+
+					var inp6 = document.createElement("input");
+					inp6.setAttribute('type', 'text');
+					inp6.setAttribute('value', '');
+					inp6.id=("id_aut_n");
+					inp6.setAttribute('class', 'style8 ');
+					base.appendChild(inp6);
+
+					var addlT5 = document.createElement("p");
+					addlT5.id = ("add_txt5");
+					base.appendChild(addlT5);
+					document.getElementById("add_txt5").innerText="Описание картины";
+
+					var inp5 = document.createElement("input");
+					inp5.setAttribute('type', 'text');
+					inp5.setAttribute('value', '');
+					inp5.id=("id_dis");
+					inp5.setAttribute('class', 'style8 ');
+					base.appendChild(inp5);
+
+					var Logout = document.createElement("input");
+					Logout.setAttribute('type', 'button');
+					Logout.id=("Logout_Museum");
+					Logout.setAttribute('value', 'Добавить');
+					Logout.setAttribute('class', 'style11');
+					Logout.setAttribute('onclick', 'Add_element()');
+					base.appendChild(Logout);
 
 					var Logout = document.createElement("input");
 					Logout.setAttribute('type', 'button');
@@ -150,6 +232,37 @@ function Delet_element() {
 	var select = document.getElementById("select_to_delet");
     var del_element = select.value;
 	Museum.Paintings.splice(del_element, 1);
+
+	var id_setd = document.getElementById('select_to_delet');
+	id_setd.innerHTML = '';
+  	item = document.createElement('option');
+	for (var i = 0; i < Museum.Paintings.length; i++) {
+  		item.innerHTML = Museum.Paintings[i].Paintings_name;
+  		item.setAttribute('value', i);
+  		id_setd.appendChild(item.cloneNode(true));
+	}
+
+	Load();	
+}
+
+function Add_element() {
+	
+	var p_img_src = document.getElementById("id_p_img_src").value;
+	var aut_img_src = document.getElementById("id_aut_img_src").value;
+	var p_n = document.getElementById("id_p_n").value;
+	var p_d = document.getElementById("id_p_d").value;
+	var aut_n = document.getElementById("id_aut_n").value;
+	var dis = document.getElementById("id_dis").value;
+
+	var add = {
+		"Paintings_img": "'"+p_img_src+"'",
+		"Authors_img": "'"+aut_img_src+"'",
+		"Paintings_name": "'"+p_n+"'",
+		"Paintig_date": "'"+p_d+"'",
+		"Author_name": "'"+aut_n+"'",
+		"Paintig_description": "'"+dis+"'"};
+
+    Museum.Paintings.push(add);
 
 	var id_setd = document.getElementById('select_to_delet');
 	id_setd.innerHTML = '';
