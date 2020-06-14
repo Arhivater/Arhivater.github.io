@@ -25,7 +25,6 @@ xhr.onload = function(e) {
 
 readJSON(path);
 
-
 function Load() {
 	Adver();
 	var amount = Museum.Paintings.length;
