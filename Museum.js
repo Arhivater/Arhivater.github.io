@@ -2,7 +2,7 @@ var kappa="";
 var JSON_var="";
 var Museum="";
 var path="./List.json";
-var ref = -1;
+var ref = 0;
 
 function readJSON(path) {
 var xhr = new XMLHttpRequest();
@@ -71,7 +71,7 @@ function Load() {
 			document.getElementById(id_section).innerHTML += ins;
 		}
 	}
-	if (ref >= 1) {
+	if (ref = 2) {
 		var id_setd = document.getElementById('select_to_delet'),
 		id_setd.innerHTML = '';
 		item = document.createElement('option');
@@ -80,8 +80,9 @@ function Load() {
   			item.setAttribute('value', i);
   			id_setd.appendChild(item.cloneNode(true));
 		}
+	} else {
+	ref = ref + 1;
 	}
-	ref += 1;
 }
 
 function Login(str) {
