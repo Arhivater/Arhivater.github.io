@@ -15,6 +15,7 @@ xhr.onload = function(e) {
               kappa=fileReader.result;
               JSON_var = JSON.stringify(kappa);
               Museum = JSON.parse(kappa.substring(0, kappa.length - 1));
+              Load();
               });
               fileReader.readAsText(kappa);
           } 
@@ -23,10 +24,10 @@ xhr.onload = function(e) {
 }
 
 readJSON(path);
-Adver();
+
 
 function Load() {
-	readJSON("./List.json");
+	Adver();
 	var amount = Museum.Paintings.length;
 	var shelf = amount/3;
 	var k = 0;
