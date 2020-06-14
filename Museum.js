@@ -261,12 +261,12 @@ function Add_element() {
 	var dis = document.getElementById("id_dis").value;
 
 	var add = {
-		"Paintings_img": "'"+p_img_src+"'",
-		"Authors_img": "'"+aut_img_src+"'",
-		"Paintings_name": "'"+p_n+"'",
-		"Paintig_date": "'"+p_d+"'",
-		"Author_name": "'"+aut_n+"'",
-		"Paintig_description": "'"+dis+"'"};
+		"Paintings_img": ""+p_img_src+"",
+		"Authors_img": ""+aut_img_src+"",
+		"Paintings_name": ""+p_n+"",
+		"Paintig_date": ""+p_d+"",
+		"Author_name": ""+aut_n+"",
+		"Paintig_description": ""+dis+""};
 
     Museum.Paintings.push(add);
 
