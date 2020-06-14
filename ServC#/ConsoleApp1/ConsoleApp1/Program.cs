@@ -7,7 +7,7 @@ namespace server
 {
     class Program
     {
-        private static async Task Awaiting()
+        private static async Task Request_response()
         {
             HttpListener listener = new HttpListener();
             listener.Prefixes.Add("http://localhost:1111/");
@@ -55,7 +55,7 @@ namespace server
         }
         static async Task Main(string[] args)
         {
-            await Awaiting();
+            await Request_response();
         }
     }
 }

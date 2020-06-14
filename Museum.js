@@ -2,6 +2,9 @@ var kappa="";
 var JSON_var="";
 var Museum="";
 var path="./List.json";
+var id_setd = "";
+var ref = 0;
+var check 
 
 function readJSON(path) {
 var xhr = new XMLHttpRequest();
@@ -70,9 +73,19 @@ function Load() {
 			document.getElementById(id_section).innerHTML += ins;
 		}
 	}
-}
 
-// Museum.Paintings.splice(3, 1);
+	if (ref == 1){
+		id_setd = document.getElementById('select_to_delet'),
+		id_setd.innerHTML = '';
+		item = document.createElement('option');
+		for (var i = 0; i < arr.length; i++) {
+  			item.innerHTML = Museum.Paintings[i].name;
+  			id_setd.appendChild(item.cloneNode(true));
+		}
+	}
+
+	ref = 1;
+}
 
 function Login(str) {
 	var name = "";
@@ -95,13 +108,38 @@ function Login(str) {
 					Log.id=("Logo_name");
 					base.appendChild(Log);
 					document.getElementById("Logo_name").innerHTML="Логин: " + name;
+
+					// <select name="" id="select"></select>
+					var setd = document.createElement("select");
+					setd.setAttribute('name', '');
+					setd.id=("select_to_delet");
+					setd.setAttribute('class', 'style11');
+					base.appendChild(setd);
+					id_setd.innerHTML = '';
+					id_setd = document.getElementById('select_to_delet'),
+  					item = document.createElement('option');
+					for (var i = 0; i < arr.length; i++) {
+  						item.innerHTML = Museum.Paintings[i].name;
+  						id_setd.appendChild(item.cloneNode(true));
+					}
+
+					var confdel = document.createElement("input");
+					confdel.setAttribute('type', 'button');
+					confdel.id=("confirm_deletion");
+					confdel.setAttribute('value', 'Сonfirm Deletion');
+					confdel.setAttribute('class', 'style11');
+					confdel.setAttribute('onclick', 'Delet_element()');
+					base.appendChild(confdel);
+
 					var Logout = document.createElement("input");
 					Logout.setAttribute('type', 'button');
 					Logout.id=("Logout_Museum");
-					Logout.setAttribute('alt', 'Painting_Image');
 					Logout.setAttribute('value', 'Logout');
+					Logout.setAttribute('class', 'style11');
 					Logout.setAttribute('onclick', 'Logout()');
 					base.appendChild(Logout);
+
+
 					} else {
 					document.getElementById("POSTparam1").value="";
 					document.getElementById("POSTparam2").value = "";
@@ -119,9 +157,18 @@ function Login(str) {
 }
 
 
+function Delet_element() {
+	var select = document.getElementById("select_to_delet");
+    var del_element = select.value;
+	Museum.Paintings.splice(del_element, 1);
+	Load();	
+}
+
 function Logout() {
 	document.getElementById("Logout_Museum").remove();
 	document.getElementById("Logo_name").remove();
+	document.getElementById("confirm_deletion").remove();
+	document.getElementById("select_to_delet").remove();
 	var base = document.getElementById("Login_Museum");
 	var plg = document.createElement("p");
 	plg.id=("lg");
@@ -154,6 +201,7 @@ function Logout() {
 	inp3.setAttribute('value', '');
 	inp3.id=("Login2");
 	inp3.setAttribute('value', 'Login');
+	inp3.setAttribute('class', 'style11');
 	inp3.setAttribute('onclick', 'Login(this.value)');
 	base2.appendChild(inp3);
 }
