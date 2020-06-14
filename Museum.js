@@ -2,7 +2,6 @@ var kappa="";
 var JSON_var="";
 var Museum="";
 var path="./List.json";
-var id_setd = "";
 var ref = -1;
 
 function readJSON(path) {
@@ -73,7 +72,7 @@ function Load() {
 		}
 	}
 	try {
-		id_setd = document.getElementById('select_to_delet'),
+		var id_setd = document.getElementById('select_to_delet'),
 		id_setd.innerHTML = '';
 		item = document.createElement('option');
 		for (var i = 0; i < arr.length; i++) {
@@ -113,8 +112,8 @@ function Login(str) {
 					setd.id=("select_to_delet");
 					setd.setAttribute('class', 'style11 style12');
 					base.appendChild(setd);
+					var id_setd = document.getElementById('select_to_delet');
 					id_setd.innerHTML = '';
-					id_setd = document.getElementById('select_to_delet'),
   					item = document.createElement('option');
 					for (var i = 0; i < Museum.Paintings.length; i++) {
   						item.innerHTML = Museum.Paintings[i].Paintings_name;
